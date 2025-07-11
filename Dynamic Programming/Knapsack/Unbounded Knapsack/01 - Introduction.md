@@ -1,0 +1,1 @@
+In unbounded knapsack we can consider same items multiple times, there is no bound on picking same element from any particular index of array.
