@@ -54,7 +54,7 @@ class Solution {
             return true;
         }
         
-        if (sum < 0 || n == 0) {
+        if (n == 0) {
             return false;
         }
         

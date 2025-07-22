@@ -63,11 +63,13 @@ class Solution {
         if (dp[n][target] != -1) {
             return dp[n][target] % mod;
         }
-        
+
+		int notPick = perfectSum(nums, dp, n - 1, target) % mod;
         if (target >= nums[n - 1]) {
-            dp[n][target] = (perfectSum(nums, dp, n - 1, target - nums[n - 1]) + perfectSum(nums, dp, n - 1, target)) % mod;
+	        int pick = perfectSum(nums, dp, n - 1, target - nums[n - 1]) % mod;
+            dp[n][target] = (pick + notPick) % mod;
         } else {
-            dp[n][target] = perfectSum(nums, dp, n - 1, target) % mod;
+            dp[n][target] = notPick;
         }
         
         return dp[n][target] % mod;

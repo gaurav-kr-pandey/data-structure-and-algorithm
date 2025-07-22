@@ -1,4 +1,4 @@
-### [0 - 1 Knapsack Problem](https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1)
+### [Practice - GFG](https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1)
 
 Given **n** items, each with a specific **weight** and **value**, and a knapsack with a capacity of **W**, the task is to put the items in the knapsack such that the **sum of weights of the items <= W** and the **sum of values** associated with them is **maximised**. 
 

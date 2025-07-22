@@ -1,7 +1,9 @@
 
+![[Pasted image 20250712010319.png]]
+
 ### 🎯 Key Parameters
 
-- **What is being asked**: sum, length, count, XOR, number of distinct integers, etc.
+- **What is being asked**: sum, length, count, XOR ([[02 - Introduction - XOR]]), number of distinct integers, etc.
 - **Constraints**: positive integers only, can include negative numbers, etc.
 - **Fixed-size vs variable-size subarrays**
 

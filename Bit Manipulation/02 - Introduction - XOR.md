@@ -128,7 +128,3 @@ XOR(i to j) = prefixXor[j] ^ prefixXor[i - 1]
 |XOR is associative + commutative|Grouping doesn't matter|
 |Prefix XOR pattern|Subarray XOR queries|
 |Count subarrays with XOR = k using hashmap|Very common in hard problems|
-
----
-
-Would you like this as a downloadable PDF or to turn this into Anki flashcards?

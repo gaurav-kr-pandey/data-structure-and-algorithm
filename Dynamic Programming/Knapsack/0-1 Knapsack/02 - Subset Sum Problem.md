@@ -1,5 +1,5 @@
 ### [Subset Sum Problem](https://www.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1)
-Given an array of positive integers **arr[]** and a value **sum**, determine if there is a subset of **arr[]** with sum equal to given **sum**. 
+Given an array of positive integers **arr[]** and a value **sum**, determine if there is a subset of **arr[]** with sum equal to given **sum**. 
 
 **Examples:**
 
@@ -20,7 +20,6 @@ Given an array of positive integers **arr[]** and a value **sum**, determine 
 1<= arr[i] <= 200  
 1<= sum <= 104
 
-
 ## Solution
 
 If we look carefully, this problem is similar to [[01 - Knapsack]], except it do not have value array.
@@ -38,11 +37,11 @@ class Solution {
     }
     
     static boolean isSubsetSum(int arr[], Boolean[][] dp, int sum, int n) {
-        if (sum == 0 && n >= 0) {
+        if (sum == 0) {
             return true;
         }
         
-        if (sum < 0 || n == 0) {
+        if (n == 0) {
             return false;
         }
         

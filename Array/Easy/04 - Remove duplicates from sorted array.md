@@ -7,8 +7,8 @@ class Solution {
         int length = nums.length;
         int lastDupIndex = 0;
         
-        for(int i=0; i<nums.length; i++) {
-            if(i==lastDupIndex || (nums[lastDupIndex]==nums[i])) 
+        for(int i = 0; i < nums.length; i++) {
+            if(i == lastDupIndex || (nums[lastDupIndex] == nums[i])) 
                 continue;
             
             nums[lastDupIndex+1] = nums[i];

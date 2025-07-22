@@ -5,23 +5,24 @@
 ```java
 class Solution {
     public int subarraySum(int[] nums, int k) {
-        int i = 0, j = 0, n = nums.length, sum = 0, count = 0;
+    
+        int i = 0, j = 0, n = nums.length, sum = 0, longest = 0;
 
         while (j < n) {
+        
             sum += nums[j];
-
             while (sum > k && i < j) {
                 sum -= nums[i++];
             }
 
             if (sum == k) {
-                count++;
+                longest = Math.max(longest, j - i + 1);
             }
 
             j++;
         }
 
-        return count;
+        return longest;
     }
 }
 ```
