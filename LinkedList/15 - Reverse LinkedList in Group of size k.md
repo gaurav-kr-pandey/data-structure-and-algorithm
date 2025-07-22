@@ -29,7 +29,7 @@ You may not alter the values in the list's nodes, only nodes themselves may be c
 
 ### 🔁 Steps:
 
-1. **Check if there are at least k nodes ahead.**
+1. Check if there are at least k nodes ahead.
 2. If yes, reverse the first `k` nodes.
 3. Make a recursive call to process the rest of the list.
 4. Connect the reversed `k` nodes to the result of the recursive call.
@@ -41,49 +41,43 @@ You may not alter the values in the list's nodes, only nodes themselves may be c
 
 
 ```java
-
 class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
-        // Step 1: Check if we have at least k nodes
-        ListNode node = head;
-        int count = 0;
-        while (node != null && count < k) {
-            node = node.next;
-            count++;
-        }
-
-        // If we have less than k nodes, just return head as is
-        if (count < k) {
+		// Step 1: Check if we have at least k nodes		
+        if (!hasKLength(head, k)) {
             return head;
         }
-
-        // Step 2: Reverse the first k nodes
+		// Step 2: Reverse the first k nodes
         ListNode prev = null;
         ListNode curr = head;
         ListNode next = null;
-        count = 0;
+        int i = 0;
 
-        while (curr != null && count < k) {
+        while (curr != null && i < k) {
             next = curr.next;
             curr.next = prev;
             prev = curr;
             curr = next;
-            count++;
+            i++;
         }
-
-        // Step 3: Recurse on the remaining list
-        if (next != null) {
-            head.next = reverseKGroup(next, k);
-        }
-
-        // Step 4: Return the new head after reversal (prev)
+		// Step 3: Recurse on the remaining list
+        head.next = reverseKGroup(next, k);
+		// Step 4: Return the new head after reversal (prev)
         return prev;
     }
+
+    private boolean hasKLength(ListNode head, int k) {
+        ListNode curr = head;
+        int i = 0;
+        while (curr != null && i < k) {
+            curr = curr.next;
+            i++;
+        }
+
+        return i == k;
+    }
 }
-
-
 ```
-
 #### Example :
 
 Input list: `1 → 2 → 3 → 4 → 5`  
