@@ -1,6 +1,4 @@
-**Practice**: [geeksforgeeks](https://www.geeksforgeeks.org/problems/stock-span-problem-1587115621/1), [leetcode]()
-
-
+**Practice**: [geeksforgeeks](https://www.geeksforgeeks.org/problems/stock-span-problem-1587115621/1)
 
 ```java
 

@@ -7,6 +7,7 @@ class Solution {
         int row = matrix.length;
         int col = matrix[0].length;
 
+		// Transpose
         for(int i=0; i<row; i++) {
             for(int j=0; j<i; j++) {
                 int temp = matrix[i][j];
@@ -14,7 +15,7 @@ class Solution {
                 matrix[j][i] = temp;
             }
         }
-
+		// Reverse
         for(int i=0; i<row; i++) {
             reverse(matrix[i]);
         }
