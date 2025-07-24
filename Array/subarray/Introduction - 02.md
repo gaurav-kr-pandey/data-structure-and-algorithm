@@ -5,33 +5,27 @@
 ## 🔹 1. Sliding Window
 
 ### ✅ Use When:
-
 - Array has only **positive numbers**
-    
 - You want subarrays of:
-    
     - **fixed length**
-        
     - **at most/exactly K conditions** (odd, even, distinct, etc.)
-        
 
 ### 🧠 Variants:
-
 - Fixed Window Size
-    
 - Variable Window Size
-    
 - Count of subarrays with at most K conditions
-    
-
+- 
 ### 🔧 Template: Variable window size
 
 ```java
 int i = 0, j = 0;
 while (j < n) {
+
+	// keep adding till condition is met
     // expand the window
 
     while (condition violated) {
+	    // Keep reducing till condition is not violated
         // shrink the window
         i++;
     }
@@ -45,11 +39,8 @@ while (j < n) {
 ### ✅ Example Problems:
 
 - Count subarrays with at most k odd numbers
-    
 - Subarrays with k distinct integers
-    
 - Longest subarray with sum ≤ K (positive only)
-    
 
 ---
 
@@ -58,22 +49,13 @@ while (j < n) {
 ### ✅ Use When:
 
 - Array can have **negative numbers**
-    
 - Find:
-    
     - Count of subarrays with **sum = K**
-        
-    - **Longest subarray** with sum = K
-        
-    - Subarray with **0 sum**
-        
-
+    - **Longest subarray** with sum = K    
+    - Subarray with **0 sum**  (or with sum k)
 ### 🧠 Variants:
-
 - `Map<sum, count>` → count of subarrays
-    
 - `Map<sum, index>` → length of subarray
-    
 
 ### 🔧 Template: Count of subarrays with sum = k
 
@@ -101,9 +83,7 @@ for (int i = 0; i < nums.length; i++) {
     if (map.containsKey(sum - k)) {
         maxLen = Math.max(maxLen, i - map.get(sum - k));
     }
-    if (!map.containsKey(sum)) {
-        map.put(sum, i);
-    }
+    map.putIfAbsent(sum, i);
 }
 
 ```
@@ -162,19 +142,16 @@ for (int i = 1; i < nums.length; i++) {
 ### ✅ Example Problems:
 
 - Maximum subarray (Leetcode)
-    
-
 ---
-
 ## 🔹 5. Difference of Counts (Sliding Window)
 
 ### ✅ Use When:
 
 - Problem asks for **exactly K** conditions (distinct/odd/even)
-
 	`exactlyK = atMost(K) - atMost(K - 1)`
 
 ### 🔧 Template: Subarrays with exactly K distinct elements
+
 ```java
 int atMostK(int[] nums, int k) {
     int i = 0, res = 0;
