@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Graph/Algorithms/08 - Topological Sorting (Khan's BFS Based Algorithm).md",
-                "mode": "preview",
+                "file": "Trie/Untitled.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08 - Topological Sorting (Khan's BFS Based Algorithm)"
+              "title": "Untitled"
             }
           }
         ]
@@ -181,10 +181,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c1d7795b07966723",
+  "active": "c35a92805f6dc14f",
   "lastOpenFiles": [
-    "Graph/Algorithms/01 - Graph.md",
+    "Tree/Untitled.md",
+    "Trie/Untitled.md",
+    "String/Untitled.md",
+    "Recursion/Untitled.md",
+    "Queue/Untitled.md",
+    "Maths/Untitled.md",
+    "Heap/Untitled.md",
+    "Hashing/Untitled.md",
+    "Backtracking/Untitled.md",
     "Graph/Algorithms/08 - Topological Sorting (Khan's BFS Based Algorithm).md",
+    "Graph/Algorithms/01 - Graph.md",
     "Graph/Algorithms/07 - Detect cycle in a directed graph (DFS Based).md",
     "Graph/Algorithms/06 - Detect cycle in a undirected graph.md",
     "Graph/Algorithms/05 - Shortest Path in unweighted graph.md",
@@ -201,15 +210,6 @@
     "Sliding Window/Variable Size/06 - Maximum Consecutive Ones - III.md",
     "Array/Subarray/Introduction - 02.md",
     "Sliding Window/Fixed Size/00 - Fixed Size Sliding Window.md",
-    "Sliding Window/101 - Questions.md",
-    "Sliding Window/Variable Size/05 - Fruits into baskets.md",
-    "Sliding Window/Variable Size/01 - Variable Size Sliding Window.md",
-    "Sliding Window/Variable Size/04 - Longest Substring Without Repeating Characters.md",
-    "Sliding Window/Variable Size/03 - Longest Substring with k unique characters.md",
-    "Sliding Window/Variable Size/02 - Longest Subarray with given Sum K(Positives).md",
-    "Array/Subarray/01 - Longest Subarray with given Sum K(Positives).md",
-    "Array/Subarray/09 - Longest subarray with sum k(Includes Negative).md",
-    "Array/Subarray/03 - Longest Subarray with 0 Sum (Includes Negative).md",
     "Sliding Window/Variable Size",
     "Sliding Window/Fixed Size",
     "Pasted image 20250722215905.png",
