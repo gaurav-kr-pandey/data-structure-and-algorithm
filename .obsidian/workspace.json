@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trie/Untitled.md",
+                "file": "Graph/Algorithms/10 - Topological Sorting (DFS Based Algorithm).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "10 - Topological Sorting (DFS Based Algorithm)"
             }
           }
         ]
@@ -181,10 +181,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c35a92805f6dc14f",
+  "active": "c1d7795b07966723",
   "lastOpenFiles": [
-    "Tree/Untitled.md",
+    "Graph/Algorithms/09 - Detect cycle in a directed graph - II.md",
+    "Graph/Algorithms/08 - Topological Sorting (Khan's BFS Based Algorithm).md",
+    "Graph/Algorithms/07 - Detect cycle in a directed graph (DFS Based).md",
+    "Graph/Algorithms/12 -.md",
     "Trie/Untitled.md",
+    "Tree/Untitled.md",
     "String/Untitled.md",
     "Recursion/Untitled.md",
     "Queue/Untitled.md",
@@ -192,13 +196,10 @@
     "Heap/Untitled.md",
     "Hashing/Untitled.md",
     "Backtracking/Untitled.md",
-    "Graph/Algorithms/08 - Topological Sorting (Khan's BFS Based Algorithm).md",
     "Graph/Algorithms/01 - Graph.md",
-    "Graph/Algorithms/07 - Detect cycle in a directed graph (DFS Based).md",
     "Graph/Algorithms/06 - Detect cycle in a undirected graph.md",
     "Graph/Algorithms/05 - Shortest Path in unweighted graph.md",
     "Graph/Algorithms/11 - Shortest Path in DAG.md",
-    "Graph/Algorithms/09 - Detect cycle in a directed graph - II.md",
     "Graph/Algorithms/10 - Topological Sorting (DFS Based Algorithm).md",
     "Graph/Algorithms/Untitled.md",
     "Graph/Algorithms/Graph Basics.md",
@@ -209,7 +210,6 @@
     "Sliding Window/Variable Size/07 - Longest Repeating Character Replacement.md",
     "Sliding Window/Variable Size/06 - Maximum Consecutive Ones - III.md",
     "Array/Subarray/Introduction - 02.md",
-    "Sliding Window/Fixed Size/00 - Fixed Size Sliding Window.md",
     "Sliding Window/Variable Size",
     "Sliding Window/Fixed Size",
     "Pasted image 20250722215905.png",

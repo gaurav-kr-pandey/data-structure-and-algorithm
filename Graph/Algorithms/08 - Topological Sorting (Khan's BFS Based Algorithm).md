@@ -1,4 +1,4 @@
-
+https://www.geeksforgeeks.org/problems/topological-sort/1
 ## What is Topological Sort?
 
 Topological Sorting of a **Directed Acyclic Graph (DAG)** is a linear ordering of its vertices such that for every directed edge `u → v`, **`u` appears before `v`** in the ordering.
@@ -35,32 +35,63 @@ Topological Sorting of a **Directed Acyclic Graph (DAG)** is a linear ordering o
 
 
 ```java
-public List<Integer> topoSort(int V, List<List<Integer>> adj) {
-    int[] indegree = new int[V];
-    for (int u = 0; u < V; u++) {
-        for (int v : adj.get(u)) {
-            indegree[v]++;
+class Solution {
+
+    public static ArrayList<Integer> topoSort(int n, int[][] edges) {
+        List<List<Integer>> adj = getAdjList(edges, n);
+
+        int[] indegree = new int[n];
+        for (int i = 0; i < n; i++) {
+            for (int v : adj.get(i)) {
+                indegree[v]++;
+            }
         }
-    }
 
-    Queue<Integer> q = new LinkedList<>();
-    for (int i = 0; i < V; i++) {
-        if (indegree[i] == 0) q.add(i);
-    }
-
-    List<Integer> topo = new ArrayList<>();
-    while (!q.isEmpty()) {
-        int u = q.poll();
-        topo.add(u);
-        for (int v : adj.get(u)) {
-            indegree[v]--;
-            if (indegree[v] == 0) q.add(v);
+        boolean[] vis = new boolean[n];
+        Queue<Integer> q = new LinkedList<>();
+        for (int i = 0; i < n; i++) {
+            if (indegree[i] == 0) {
+                q.add(i);
+                vis[i] = true;
+            }
         }
+
+        ArrayList<Integer> topo = new ArrayList<>();
+        while (!q.isEmpty()) {
+            int u = q.poll();
+            topo.add(u);
+            for (int v : adj.get(u)) {
+                if (!vis[v]) {
+                    indegree[v]--;
+                    if (indegree[v] == 0) {
+                        q.add(v);
+                        vis[v] = true;
+                    }
+                }
+            }
+        }
+
+        if (topo.size() != n) {
+            // Graph has a cycle
+            return new ArrayList<>(); 
+            // or throw new IllegalArgumentException("Cycle detected")
+        }
+
+        return topo;
     }
 
-    if (topo.size() != V) {
-        throw new RuntimeException("Graph has a cycle");
-    }
+    private static List<List<Integer>> getAdjList(int[][] edges, int v) {
+        List<List<Integer>> adj = new ArrayList<>();
+        for (int i = 0; i < v; i++) {
+            adj.add(new ArrayList<>());
+        }
 
-    return topo;
+        for (int[] edge : edges) {
+            adj.get(edge[0]).add(edge[1]);
+        }
+
+        return adj;
+    }
 }
+
+```
