@@ -5,7 +5,10 @@
 2. Once all children of a node are processed, we know this node has no unvisited dependencies left → **we can now safely place it in the ordering**.
 3. To maintain the correct order:
     - We use a **stack** (or reverse a list).
-    - After visiting all neighbors of a node, we **push it to the stack** — this guarantees that nodes with no outgoing edges are added first (like leaf nodes), and dependencies are added later.
+    - After visiting all neighbours of a node, we **push it to the stack** — this guarantees that nodes with no outgoing edges are added first (like leaf nodes), and dependencies are added later.
+
+### Code:
+
 
 ```java
 public class TopoSortDFS {
