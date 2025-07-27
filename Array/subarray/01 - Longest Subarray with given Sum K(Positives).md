@@ -1,9 +1,16 @@
 **Problem Statement:** Given an array and a sum k, we need to print the length of the longest subarray that sums to k.
 
+---
 > **Key observations:**
 > `longest subarray`, `length`, `positive integers only`
 
-**Approach:** Sliding window (Works only for positive numbers)
+**Approach:** Sliding window (Works only for positive numbers), this problem can also be solve using - [[02 - Longest subarray with sum k(Includes Negative)]]
+
+Related - [[02 - Longest subarray with sum k(Includes Negative)]] , [[03 - Longest Subarray with 0 Sum (Includes Negative)]]
+
+### Code:
+
+
 
 ```java
 class Solution {
