@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Graph/Problems/09 - Word Ladder.md",
-                "mode": "source",
+                "file": "Design Problems/08 - Design Randomized Set.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09 - Word Ladder"
+              "title": "08 - Design Randomized Set"
             }
           }
         ],
@@ -198,9 +198,20 @@
   },
   "active": "0da5d74bd0c4f52e",
   "lastOpenFiles": [
+    "Design Problems/07 - Search Type Ahead.md",
+    "Design Problems/08 - Design Randomized Set.md",
+    "Design Problems/06 - Search in a Maze.md",
+    "Design Problems/05 - Design Tic Tac Toe.md",
+    "Design Problems/04 - Design LFU Cache.md",
+    "Design Problems/03 - Design LRU Cache.md",
+    "Design Problems/02 - Solve Sudoku.md",
+    "Design Problems/01 - Design Browser History.md",
+    "LinkedList/16 - Design Browser History.md",
+    "Design Problems",
+    "Graph/Problems/01 - Number of proviences.md",
     "Graph/Problems/07 - Number of enclaves.md",
-    "Graph/Problems/09 - Word Ladder.md",
     "Graph/Problems/06 - Surrounded Region.md",
+    "Graph/Problems/09 - Word Ladder.md",
     "Graph/Problems/06 - 01 Matrix.md",
     "Graph/Problems/05 - Flood Fill.md",
     "Array/Subarray/09 - Maximum  Subarray - II.md",
@@ -214,17 +225,7 @@
     "Array/Subarray/01 - Longest Subarray with given Sum K(Positives).md",
     "Graph/Problems/03 - Number of connected components.md",
     "Graph/Problems/04 - Rotten Oranges.md",
-    "Graph/Problems/01 - Number of proviences.md",
-    "Graph/Problems/02 - Number of Island.md",
-    "Graph/Algorithms/13 - Prim's Algorithm.md",
     "Graph/Problems",
-    "Graph/Algorithms/12 - Minimum Spanning Tree.md",
-    "Graph/Algorithms/08 - Topological Sorting (Khan's BFS Based Algorithm).md",
-    "Graph/Algorithms/10 - Topological Sorting (DFS Based Algorithm).md",
-    "Graph/Algorithms/11 - Shortest Path in DAG.md",
-    "Graph/Algorithms/09 - Detect cycle in a directed graph - II.md",
-    "Graph/Algorithms/07 - Detect cycle in a directed graph (DFS Based).md",
-    "Trie/Untitled.md",
     "Graph/Algorithms",
     "Sliding Window/Variable Size",
     "Sliding Window/Fixed Size",
@@ -236,7 +237,6 @@
     "Binary Search/BS on 1D Array",
     "Images",
     "Array/Subarray/prefix sum and hashing",
-    "Array/Subarray/sliding window",
     "Dynamic Programming/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",
