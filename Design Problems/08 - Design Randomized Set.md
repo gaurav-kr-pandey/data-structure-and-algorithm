@@ -2,11 +2,11 @@ https://leetcode.com/problems/insert-delete-getrandom-o1/
 
 ### Solution:
 
-ADD:
+_**ADD:**_
 map - put each `val` and it's `index` - O(1)
 list -  add all the elements to access it using index in O(1)
 
-REMOVE:
+**_REMOVE:_**
 `swap(list, lastIndexEle, value to be removed Index)` ==> `list.size() - 1` and `index = map.get(val)`
 
 
