@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "603af09d4484d079",
+        "id": "f9c6da015571fefa",
         "type": "tabs",
         "children": [
           {
-            "id": "2e327216b0ea2424",
+            "id": "b3ae4fbe8e81344b",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "Design Problems/08 - Design Randomized Set.md",
-                "bFile": "Design Problems/08 - Design Randomized Set.md",
-                "aRef": ""
+                "file": "Trie/03 -.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: 08 - Design Randomized Set"
+              "icon": "lucide-file",
+              "title": "03 -"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 443.5,
-    "collapsed": true
+    "width": 443.5
   },
   "right": {
     "id": "041237a914ea0c2c",
@@ -182,18 +181,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2e327216b0ea2424",
+  "active": "b3ae4fbe8e81344b",
   "lastOpenFiles": [
+    "Trie/02 - Trie (Basic Implementation).md",
+    "Trie/03 -.md",
+    "Trie/01 - Trie (Introduction).md",
+    "Design Problems/07 - Search Type Ahead.md",
+    "Design Problems/06 - Rat in a Maze.md",
+    "Design Problems/05 - Design Tic Tac Toe.md",
+    "LinkedList/10 - Intersection of Two Linked Lists.md",
+    "LinkedList/15 - Reverse LinkedList in Group of size k.md",
+    "LinkedList/16 - Design Browser History.md",
     "Graph/Algorithms/12 - Minimum Spanning Tree.md",
     "Design Problems/08 - Design Randomized Set.md",
     "Design Problems/01 - Design Browser History.md",
     "Design Problems/02 - Solve Sudoku.md",
     "Design Problems/03 - Design LRU Cache.md",
     "Design Problems/04 - Design LFU Cache.md",
-    "Design Problems/05 - Design Tic Tac Toe.md",
-    "Design Problems/06 - Search in a Maze.md",
-    "Design Problems/07 - Search Type Ahead.md",
-    "LinkedList/16 - Design Browser History.md",
     "Design Problems",
     "Graph/Problems/01 - Number of proviences.md",
     "Graph/Problems/07 - Number of enclaves.md",
@@ -206,11 +210,6 @@
     "Array/Subarray/07 - Count Number of Nice Subarrays.md",
     "Array/Subarray/06 - Count Subarrays with given XOR.md",
     "Array/Subarray/05 - Count Subarray Sum Equals K.md",
-    "Array/Subarray/04 - Maximum Subarray (Kaden's Algorithm).md",
-    "Array/Subarray/03 - Longest Subarray with 0 Sum (Includes Negative).md",
-    "Array/Subarray/02 - Longest subarray with sum k(Includes Negative).md",
-    "Array/Subarray/01 - Longest Subarray with given Sum K(Positives).md",
-    "Graph/Problems/03 - Number of connected components.md",
     "Graph/Problems",
     "Graph/Algorithms",
     "Sliding Window/Variable Size",
