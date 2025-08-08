@@ -1,6 +1,8 @@
 
 [practice](https://leetcode.com/problems/max-consecutive-ones/description/)
 
+### Solution:
+
 ```java
 class Solution {
     public int findMaxConsecutiveOnes(int[] nums) {

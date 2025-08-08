@@ -1,5 +1,7 @@
 **Problem Statement:** Given an array and a sum k, we need to print the length of the longest subarray that sums to k.
 
+### Solution:
+
 **Approach:** Sliding window (Works only for positive numbers)
 
 ```java
@@ -26,3 +28,9 @@ class Solution {
     }
 }
 ```
+
+---
+
+> Preferred approach is using Map + Prefix sum concept so that we can also include negative numbers and our solution does not break as above for negative numbers.
+> 
+> Ref: [[02 - Longest subarray with sum k(Includes Negative)]]
