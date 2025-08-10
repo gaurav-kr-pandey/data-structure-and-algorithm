@@ -10,7 +10,7 @@ You might start thinking of using sliding window approach ([[11 - Longest Subarr
 If we consider above example to run a simple sliding window, we keep adding `currSum += arr[i]` till we reach `k = 15`
 
 `if currSum <= 15 (k)` $\to$ add current element `currSum += arr[i]`  
-`if currSum == 15 (k)` $\to$ calculate result`
+`if currSum == 15 (k)` $\to$ calculate result
 `if currSum > 15 (k)` $\to$ subtract element out of window range `currSum -= arr[j++]` 
 
 Let's run this algo on above input -
