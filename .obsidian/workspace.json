@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Array/Easy/01 - Largest Element in array.md",
+                "file": "Array/Subarray/02 - Longest subarray with sum k(Includes Negative).md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Largest Element in array"
+              "title": "02 - Longest subarray with sum k(Includes Negative)"
             }
           }
         ],
@@ -198,16 +198,20 @@
   },
   "active": "35787db231563d05",
   "lastOpenFiles": [
-    "Array/Subarray/02 - Longest subarray with sum k(Includes Negative).md",
     "Array/Easy/11 - Longest Subarray with given Sum K(Positives).md",
-    "Array/Subarray/03 - Longest Subarray with 0 Sum (Includes Negative).md",
-    "Array/Easy/10 - Single Number.md",
-    "Array/Easy/09 - Maximum Consecitive Ones.md",
     "Array/Easy/08 - Missing Number.md",
+    "Array/Easy/10 - Single Number.md",
+    "Array/Easy/12 - Majority Element.md",
+    "Array/Medium/09 - Two Sum.md",
+    "Array/Easy/09 - Maximum Consecitive Ones.md",
+    "Bit Manipulation/02 - Introduction - XOR.md",
+    "Array/Medium/10 - Sort Colors.md",
+    "Array/Easy/01 - Largest Element in array.md",
+    "Array/Subarray/02 - Longest subarray with sum k(Includes Negative).md",
+    "Array/Subarray/03 - Longest Subarray with 0 Sum (Includes Negative).md",
     "Array/Easy/04 - Remove duplicates from sorted array.md",
     "Array/Easy/03 - Check if array is sorted and rotated.md",
     "Array/Easy/02 - Second Largest element in array.md",
-    "Array/Easy/01 - Largest Element in array.md",
     "Array/Easy/07 - Find Union.md",
     "Array/Easy/06 - Move Zeroes.md",
     "Array/Easy/05 - Rotate Array.md",
@@ -220,10 +224,6 @@
     "LinkedList/10 - Intersection of Two Linked Lists.md",
     "LinkedList/15 - Reverse LinkedList in Group of size k.md",
     "LinkedList/16 - Design Browser History.md",
-    "Graph/Algorithms/12 - Minimum Spanning Tree.md",
-    "Design Problems/08 - Design Randomized Set.md",
-    "Design Problems/01 - Design Browser History.md",
-    "Design Problems/02 - Solve Sudoku.md",
     "Design Problems",
     "Graph/Problems",
     "Graph/Algorithms",

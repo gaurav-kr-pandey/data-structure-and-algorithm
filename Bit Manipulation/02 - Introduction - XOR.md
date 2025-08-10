@@ -34,8 +34,12 @@ Problem: Every number occurs twice except one — find that one.
 🔹 Code:
 
 ```java
+
 int xor = 0;
-for (int num : arr) xor ^= num;
+
+for (int num : arr) 
+	xor ^= num;
+	
 return xor;
 ```
 

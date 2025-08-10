@@ -9,22 +9,22 @@ You might start thinking of using sliding window approach ([[11 - Longest Subarr
 
 If we consider above example to run a simple sliding window, we keep adding `currSum += arr[i]` till we reach `k = 15`
 
-`if currSum <= 15 (k)` --> add current element `currSum += arr[i]`  
-`if currSum == 15 (k)` --> calculate result`
-`if currSum > 15 (k) -->` subtract element out of window range `currSum -= arr[j++]` 
+`if currSum <= 15 (k)` $\to$ add current element `currSum += arr[i]`  
+`if currSum == 15 (k)` $\to$ calculate result`
+`if currSum > 15 (k)` $\to$ subtract element out of window range `currSum -= arr[j++]` 
 
 Let's run this algo on above input -
 
-|  i  |  j  | currSum | max(length = `i - j + 1`) |
-| :-: | :-: | :-----: | :-----------------------: |
-|  0  |  0  |   10    |             0             |
-|  1  |  0  |  `15`   |       1 - 0 + 1 = 2       |
-|  2  |  0  |   17    |                           |
-|  2  |  1  |    7    |                           |
-|  3  |  1  |   14    |                           |
-|  4  |  1  |  `15`   |       4 - 1 + 1 = 4       |
-|  5  |  1  |    5    |                           |
-|     |     |         |     `max (4, 2) = 4`      |
+|  i  |  j  |      currSum      | max(length = `i - j + 1`) |
+| :-: | :-: | :---------------: | :-----------------------: |
+|  0  |  0  |        10         |             0             |
+|  1  |  0  | 10 + 5 $\to$ `15` |       1 - 0 + 1 = 2       |
+|  2  |  0  |  15 + 2 $\to$ 17  |                           |
+|  2  |  1  |  17 - 10 $\to$ 7  |                           |
+|  3  |  1  |  7 + 7 $\to$ 14   |                           |
+|  4  |  1  | 14 + 1 $\to$ `15` |       4 - 1 + 1 = 4       |
+|  5  |  1  |  15 - 10 $\to$ 5  |                           |
+|     |     |                   |     `max (4, 2) = 4`      |
 
 Here answer from Sliding window is `4` but it should have been 6 since sum of complete array is 15, which has length 6, it is max length that is expected in the question. Now the question is:
 

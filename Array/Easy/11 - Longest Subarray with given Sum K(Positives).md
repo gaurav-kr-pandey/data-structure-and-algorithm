@@ -34,3 +34,5 @@ class Solution {
 > Preferred approach is using Map + Prefix sum concept so that we can also include negative numbers and our solution does not break as above for negative numbers.
 > 
 > Ref: [[02 - Longest subarray with sum k(Includes Negative)]]
+>  
+>  But that will have extra space of O($n$), so if it is not specifically mentioned that array can have negative elements, above approach is the best approach(*Sliding Window*) as we are not using any extra space.
