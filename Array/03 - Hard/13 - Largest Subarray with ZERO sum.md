@@ -12,7 +12,7 @@
 ## Solution
 
 > Key Observations -
-`subarray` , `sum`, `includes negative numbers`, `length of longest subarray`
+    `subarray` , `sum`, `includes negative numbers`, `length of longest subarray`
 
 
 

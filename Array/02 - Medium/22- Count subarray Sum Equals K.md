@@ -50,7 +50,7 @@ prefixSum[j] - prefixSum[i - 1] = k
 ⇒ prefixSum[i - 1] = prefixSum[j] - k
 ```
 We can use a **HashMap** to count how many times each `prefixSum` has occurred so far.  
-If `prefixSum - k` has occurred before, we have found a subarray ending at current index with sum `k`.
+If `prefixSum[j] - k` has occurred before, we have found a subarray ending at current index with sum `k`.
 
 ---
 ### Example:
@@ -72,13 +72,12 @@ Total = 2
 ## Java Code (O(n)):
 
 ```java
-import java.util.HashMap;
 
 public class SubarraySumEqualsK {
     public int subarraySum(int[] nums, int k) {
     
         Map<Integer, Integer> map = new HashMap<>();
-        map.put(0, 1);  // Base case: empty prefix sum
+        map.put(0, 1);  // Base case: empty prefix sum, i.e; prefixSum == k
         int count = 0;
         int prefixSum = 0;
 

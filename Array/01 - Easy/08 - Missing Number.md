@@ -19,7 +19,7 @@ $S_n = \dfrac{n * (n + 1)} {2}$
 
 if $\sum i \to n$, assume $S_a$ = $sum(array)$ then,
 
-missing number = 
+missing number ($x$) 
 $x = S_n - Sa$ 
 
 **Code:**
@@ -35,8 +35,8 @@ class Solution {
             totalArraySum += x;
         }
             
-        int sum = n * (n + 1) / 2;
-        return sum - totalArraySum;
+        int sumOfNNaturalNumbers = n * (n + 1) / 2;
+        return sumOfNNaturalNumbers - totalArraySum;
     }
 }
 ```

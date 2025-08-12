@@ -4,10 +4,12 @@ https://leetcode.com/problems/next-permutation/description/
 
 **Algorithm:**
 
-1. Find first element `x` that is `nums[i-1] < nums[i]` <-- from end
-2. Find first element that is greater x (in step1) <-- from end 
+1. Find first element `x` that is `nums[i - 1] < nums[i]` $\to$  from end ($n \to 0$)
+2. Find first element that is greater `x` (in step1) $\to$  from end ($n \to 0$)
 3. Swap`index1, index2`
 4. Reverse/Sort the array after `index1`
+
+**Code:**
 
 ```java
 class Solution {
@@ -61,50 +63,4 @@ class Solution {
     }
 }
 
-```
-
-
-```java
-class Solution {
-    public void nextPermutation(int[] nums) {
-        int index1 = -1, index2 = -1, n = nums.length;
-
-        for (int i = n - 1; i > 0; i--) {
-            if (nums[i] > nums[i - 1]) {
-                index1 = i - 1;
-                break;
-            }
-        }
-
-        if (index1 == -1) {
-            reverse(nums, 0);
-            return;
-        }
-
-        for (int i = n - 1; i >= 0; i--) {
-            if (nums[i] > nums[index1]) {
-                index2 = i;
-                break;
-            }
-        }
-
-        swap(nums, index1, index2);
-        reverse(nums, index1 + 1);
-
-    }
-
-    private void reverse(int[] arr, int i) {
-        int j = arr.length - 1;
-
-        while (i < j) {
-            swap(arr, i++, j--);
-        }
-    }
-
-    private void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
-}
 ```

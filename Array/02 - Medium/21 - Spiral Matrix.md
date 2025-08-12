@@ -1,5 +1,19 @@
 https://leetcode.com/problems/spiral-matrix/description/
 
+```text
+- rowBegin, colBegin --> colEnd
+	- rowBegin++;
+
+- colEnd, rowBegin --> rowEnd;
+	- colEnd--;
+
+- rowEnd, colEnd --> colBegin
+	- rowEnd--;
+
+- colBegin, rowEnd --> rowBegin
+	- colBegin++;
+```
+
 ```java
 class Solution {
 

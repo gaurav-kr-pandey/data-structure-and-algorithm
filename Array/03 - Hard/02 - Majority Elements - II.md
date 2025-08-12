@@ -15,8 +15,9 @@ Given an integer array of size `n`, find all elements that appear more than `�
 class Solution {
     public List<Integer> majorityElement(int[] nums) {
     
-        int n = nums.length, candidate1 = 0, count1 = 0;
-        int candidate2 = 1, count2 = 0;
+        int n = nums.length; 
+        int candidate1 = 0, count1 = 0;
+        int candidate2 = 0, count2 = 0;
         List<Integer> list = new ArrayList<>();
 
 
@@ -37,7 +38,8 @@ class Solution {
             }
         }
 
-        count1 = 0; count2 = 0;
+        count1 = 0; 
+        count2 = 0;
 
         for (int ele : nums) {
             if (candidate1 == ele) {
