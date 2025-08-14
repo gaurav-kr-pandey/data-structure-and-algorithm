@@ -46,6 +46,9 @@ _If n = length of array, and m = max value of array _
 	- _sorting = n log (n) + (diff  = log (m) x traversing n elements log m times) _
 - _Space Complexity:_ $O(1)$
 
+**Do we need to sort the array?**
+Yes, we need to sort the array(stalls), then only we can _assign **stalls** to **k** cows such that the **minimum distance** between any two of them is the **maximum** possible_. Hence sorting also takes $O(nlog_2n)$
+
 
 ```text
 Rough Algo:
@@ -59,8 +62,6 @@ Rough Algo:
 - else 
 	- high = mid - 1 // try for smaller diff
 ```
-
-
 
 
 **Code:**

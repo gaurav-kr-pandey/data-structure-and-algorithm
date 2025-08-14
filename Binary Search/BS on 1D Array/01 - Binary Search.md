@@ -1,4 +1,9 @@
-[leetcode](https://leetcode.com/problems/binary-search/description/)
+
+[[Binary Search/BS on 1D Array/Introduction|Introduction]]
+
+[Practice Here](https://leetcode.com/problems/binary-search/description/)
+
+**Code:**
 
 ```java
 class Solution {
