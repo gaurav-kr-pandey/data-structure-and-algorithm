@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trie/02 - Trie (Basic Implementation).md",
+                "file": "Binary Search/BS on Answers/01 - Square Root.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 - Trie (Basic Implementation)"
+              "title": "01 - Square Root"
             }
           }
         ]
@@ -183,6 +183,11 @@
   },
   "active": "e5ffde9c8d227b62",
   "lastOpenFiles": [
+    "Binary Search/BS on Answers/08 - Aggressive Cows.md",
+    "Binary Search/BS on 1D Array/Introduction.md",
+    "Binary Search/BS on Answers/Introduction.md",
+    "Binary Search/BS on 1D Array/01 - Binary Search.md",
+    "Trie/02 - Trie (Basic Implementation).md",
     "Trie/01 - Trie (Introduction).md",
     "Binary Search/BS on Answers/13 - Median of Two Sorted Arrays.md",
     "Tree/02 - Binary Search Tree",
@@ -192,7 +197,6 @@
     "Binary Search/BS on Answers/10 - Split Array Largest Sum.md",
     "Binary Search/BS on Answers/09 - Book Allocation Problem.md",
     "Binary Search/BS on Answers/07 - Kth Missing Positive Number.md",
-    "Binary Search/BS on Answers/08 - Aggressive Cows.md",
     "Binary Search/BS on Answers/06 - Ship Packages.md",
     "Binary Search/BS on Answers/05 - Smallest Divisor.md",
     "Binary Search/BS on Answers/04 - Make \"m\" Bouquets.md",
@@ -207,10 +211,6 @@
     "Array/03 - Hard/12 - 4 Sum.md",
     "Array/03 - Hard/11 - 3 Sum.md",
     "Array/03 - Hard/02 - Majority Elements - II.md",
-    "Array/03 - Hard/01 - Pascal's Triangle.md",
-    "Array/02 - Medium/22- Count subarray Sum Equals K.md",
-    "Array/02 - Medium/21 - Spiral Matrix.md",
-    "Array/02 - Medium/20 - Rotate Image.md",
     "Misc",
     "Design Problems",
     "Graph/Problems",
