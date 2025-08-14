@@ -8,12 +8,15 @@
 **Output:** 5
 **Explanation:** The longest subarray with sum equals to 0 is [-2, 2, -8, 1, 7].
 
-
 ## Solution
 
 > Key Observations -
-    `subarray` , `sum`, `includes negative numbers`, `length of longest subarray`
 
+`subarray` , `sum`, `includes negative numbers`, `length of longest subarray`
+
+
+
+**Code:**
 
 
 ```java
