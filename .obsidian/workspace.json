@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Binary Search/BS on Answers/09 - Book Allocation Problem.md",
+                "file": "Binary Search/BS on Answers/04 - Make \"m\" Bouquets.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09 - Book Allocation Problem"
+              "title": "04 - Make \"m\" Bouquets"
             }
           }
         ]
@@ -183,6 +183,7 @@
   },
   "active": "e5ffde9c8d227b62",
   "lastOpenFiles": [
+    "Binary Search/BS on Answers/09 - Book Allocation Problem.md",
     "Binary Search/BS on Answers/04 - Make \"m\" Bouquets.md",
     "Binary Search/BS on Answers/03 - Koko Eating Bananas.md",
     "Binary Search/BS on Answers/08 - Aggressive Cows.md",
@@ -198,7 +199,6 @@
     "Binary Search/BS on Answers/12 - Minimize Max Distance to Gas Station.md",
     "Binary Search/BS on Answers/11 - Painter's Partition.md",
     "Binary Search/BS on Answers/10 - Split Array Largest Sum.md",
-    "Binary Search/BS on Answers/09 - Book Allocation Problem.md",
     "Binary Search/BS on Answers/07 - Kth Missing Positive Number.md",
     "Binary Search/BS on Answers/06 - Ship Packages.md",
     "Binary Search/BS on Answers/05 - Smallest Divisor.md",
