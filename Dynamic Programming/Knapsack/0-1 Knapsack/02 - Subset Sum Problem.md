@@ -20,11 +20,13 @@ Given an array of positive integers **arr[]** and a value **sum**, determine 
 1<= arr[i] <= 200  
 1<= sum <= 104
 
-## Solution
+## Intution:
 
 If we look carefully, this problem is similar to [[01 - Knapsack]], except it do not have value array.
-Here weight == sum and we do not need to maximise the value, we just need to find if sum(weight) is possible or not with any subset in the array.
+Here `weight == sum` and we do not need to maximise the value, we just need to find if sum(weight) is possible or not with any subset in the array.
 
+
+**Code:**
 
 ```java
 class Solution {

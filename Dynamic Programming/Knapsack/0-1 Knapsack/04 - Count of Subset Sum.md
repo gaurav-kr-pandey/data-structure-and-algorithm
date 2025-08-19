@@ -4,33 +4,37 @@ Given an array **`arr`** of non-negative integers and an integer **`target`**
 
 **Examples:**
 
-**Input**: arr[] = [5, 2, 3, 10, 6, 8], target = 10
+**Input**: `arr[] = [5, 2, 3, 10, 6, 8], target = 10`
 **Output:** 3
 **Explanation**: The subsets {5, 2, 3}, {2, 8}, and {10} sum up to the target 10.
 
-**Input**: arr[] = [2, 5, 1, 4, 3], target = 10
-**Output:** 3
-**Explanation**: The subsets {2, 1, 4, 3}, {5, 1, 4}, and {2, 5, 3} sum up to the target 10.
-
-**Input**: arr[] = [5, 7, 8], target = 3  
-**Output:** 0
-**Explanation**: There are no subsets of the array that sum up to the target 3.
-
-**Input**: arr[] = [35, 2, 8, 22], target = 0  
-**Output:** 1
-**Explanation**: The empty subset is the only subset with a sum of 0.
-
 **Constraints:**  
 1 ≤ arr.size() ≤ 103  
-0 ≤ arr[i] ≤ 103  
-0 ≤ target ≤ 103
+0 ≤ `arr[i]` ≤ 103  
+0 ≤ `target` ≤ 103
 
-## Solution
+## Intuition:
 
 This problem is variation of [[02 - Subset Sum Problem]]
 In this problem we will count both choices:
 1. Pick current element
 2. Do not pick current element
+
+**Edge Case:**
+
+Do not return if `target == 0` since there can be value i.e; nums[i] == 0 which again forms a subset, hence explore till last (n).
+
+```java
+        if (n == 0) {
+            if (target == 0) {
+                return 1;
+            }
+            return 0;
+        }
+```
+
+
+**Code:**
 
 ```java
 

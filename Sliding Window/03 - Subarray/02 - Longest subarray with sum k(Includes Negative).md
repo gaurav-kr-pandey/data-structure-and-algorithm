@@ -4,8 +4,8 @@ This is exact same problem as - [[03 - Longest Subarray with 0 Sum (Includes Neg
 ### Intuition:
 
 You might start thinking of using sliding window approach ([[11 - Longest Subarray with given Sum K(Positives)]]) and it works perfectly well for array with only positive numbers but will not work, if array has negative number, let's understand this with an example:
-**Input:** arr[] = [10, 5, 2, 7, 1, -10], k = 15
-**Output:** 6 (0 ---> 5)
+**Input:** `arr[] = [10, 5, 2, 7, 1, -10], k = 15`
+**Output:** `6 (0 ---> 5)`
 
 If we consider above example to run a simple sliding window, we keep adding `currSum += arr[i]` till we reach `k = 15`
 
@@ -26,19 +26,19 @@ Let's run this algo on above input -
 |  5  |  1  |  15 - 10 $\to$ 5  |                           |
 |     |     |                   |     `max (4, 2) = 4`      |
 
-Here answer from Sliding window is `4` but it should have been 6 since sum of complete array is 15, which has length 6, it is max length that is expected in the question. Now the question is:
+Here answer from Sliding window is `4` but it should have been `6` since sum of complete array is `15`, which has length `6`, it is max length that is expected in the question. Now the question is:
 
 ###### Why Sliding Window does not worked for array having negative elements?
 
 In sliding window we keep increasing the window and decreasing the window based on the variable and when `currSum > k` in that case we ~~==decrease the window==~~
-_**Decreasing the window if  `currSum > k` is the issue**_ : because we are assuming that going ahead this sum will always increase but there can be a negative number that can reduce our `currSum` value and later sum up to `currSum == k` i.e; 
-`currSum > k --> currSum <= k --> currSum == k` and we can have a bigger length array possibly. Hence, we are not checking for all the window that can have `currSum == k` and then finding max.
+_**Decreasing the window if  `currSum > k` is the issue**_ : because we are assuming that going ahead this sum will always increase but there can be a **negative number** that can reduce our `currSum` value and later sum up to `currSum == k` i.e; 
+`(currSum > k) --> (currSum <= k) --> (currSum == k)` and we can have a bigger length array possibly. Hence, we are not checking for all the window that can have `currSum == k` and then finding max.
 
 One approach could be having two loop just to find all possible window and another loop for adding that window's elements but time complexity will be O($n^3$), we can reduce this approach to O($n^2$) by precomputing sum into a prefix sum array but that is still not an optimal solution.
 
 Let's figure out another approach that runs in O($n$) time complexity and if required may be O($n$) space complexity, we will use same input array:
 
-**Input:** arr[] = [10, 5, 2, 7, 1, -10], k = 15
+**Input:** `arr[] = [10, 5, 2, 7, 1, -10], k = 15`
 
 Let's build all the possible window that has `sum == k` **without decreasing variable window size = k** and try to find our solution:
 
@@ -50,7 +50,7 @@ Let's build all the possible window that has `sum == k` **without decreasing var
 |  3  |  17 + 7 = 24   |                           |
 |  4  |  24 + 1 = 25   |                           |
 |  5  | 25 - 10 = `15` |       5 - 1 + 1 = 4       |
-In this approach we are not decreasing the window and hence we kind of builded a `prefixSumMap <currSum, currIndex)>` and we got two values where `currSum == k`, hence
+In this approach we are not decreasing the window and hence we kind of builded a `prefixSumMap(currSum, currIndex)` and we got two values where `currSum == k`, hence
 
 ```text
 0 --> 1 == 15
@@ -78,11 +78,13 @@ sum[i --> j] + currSum == k then,
 sum[i --> j] == currSum - k
 ```
 
-hence, we just need to check at each element that if there exists a element in the map that has value currSum - k, the we have a sum[i --> j] that can sum into currSum and is equals k.
+hence, we just need to check at each element that if there exists a element in the map that has value currSum - k, the we have a `sum[i --> j]` that can sum into `currSum` and is equals `k`.
 
-Note: We can put the values only if it does not exists otherwise our currSum value will override the leftMost index that can give use the longest length;
+>Note: We can put the values only if it does not exists otherwise our `currSum` value will override the leftMost index that can give use the longest length;
 
-Here is the complete soltion that works well:
+Here is the complete solution that works well:
+
+**Code:**
 
 ```java
 class Solution {

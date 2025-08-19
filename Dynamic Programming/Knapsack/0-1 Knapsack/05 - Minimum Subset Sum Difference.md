@@ -4,64 +4,49 @@ Given an array **arr[]**  containing **non-negative** integers, the task is
 
 **Examples:**
 
-**Input**: arr[] = [1, 6, 11, 5]
+**Input**: `arr[] = [1, 6, 11, 5]`
 **Output:** 1
 **Explanation**: 
 Subset1 = {1, 5, 6}, sum of Subset1 = 12 
 Subset2 = {11}, sum of Subset2 = 11   
 Hence, minimum difference is 1.  
 
-**Input:** arr[] = [1, 4]
-**Output:** 3
-**Explanation**: 
-Subset1 = {1}, sum of Subset1 = 1
-Subset2 = {4}, sum of Subset2 = 4  
-Hence, minimum difference is 3.  
+## Intuition:
 
-**Input:** arr[] = [1]
-**Output:** 1
-**Explanation**: 
-Subset1 = {1}, sum of Subset1 = 1
-Subset2 = {}, sum of Subset2 = 0  
-Hence, minimum difference is 1.
+As stated in the problem, we need two subset s1 and s2 such that:
 
-**Constraints:**  
-1 ≤ arr.size() *|sum of array elements| ≤ 105  
-1 <= arr[i] <= 105
-
-
-## Solution
-
-As stated in the problem, we need two subset s1 and s2 such that 
-	| s1 - s2 | = minimum
+```java
+| s1 - s2 | = minimum
+```
 
 Key observation:
 	 As minimum as possible will be ZERO (0) because,  if both set are equal then difference will be zero
 
-Hence, we can say that `2 * s1 == sum(arr)` iff `s1 == s2`
-	or, `s1 = sum(arr) / 2`
-now, we can also say that find the maximumSubsetSum closest to `target = sum(arr) / 2`
-or this problem is exactly as -
+Hence, we can say that:
+```java
+2 * s1 == sum(arr), iff s1 == s2
+target(s1) == sum(arr) / 2
+```
 
->Find the maximumSubsetSum is similar to picking the maximum value of items in knapsack in [[01 - Knapsack]]
+now, we can also say that find the maximum subset sum closest to `target(s1) = sum(arr) / 2` or this problem is exactly as -
+
+> Find the maximum subset sum is similar to picking the maximum value of items in knapsack in [[01 - Knapsack]]
 >	 `w = sum(arr) / 2 == target`
 >	 `value[] = = arr[]`
 >	 `weight[]`, *not given (we just need to maximise the value)*
-
-
-
 
 Hence, `Algorithm` to solve this problem is:
 - Get `totalSum` of array
 - `Target` will be `totalSum / 2`
 - Get `maximumSubsetSum` for the `Target`
-- result will `| totalSum - (2 * maximumSubsetSum(target = totalSum / 2)) |`
+- result will be - 
+```java
+| totalSum - (2 * maximumSubsetSum(target = totalSum / 2)) |
+```
 
+**Code:**
 
 ```java
-
-// User function Template for Java
-
 class Solution {
 
     public int minDifference(int arr[]) {
@@ -98,6 +83,4 @@ class Solution {
         return dp[n][targetSum];
     }
 }
-
-
 ```

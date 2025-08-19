@@ -22,16 +22,20 @@ Given an array **arr[],** determine if it can be partitioned into two subsets 
 ## Solution
 
 As we need two subset s1, s2 i.e; 
-`s1 == s2`
-`s1 + s2 == sum(arr)` 
-this means,
-`target == sum / 2`
+```lisp
+s1 == s2
+s1 + s2 == sum(arr)
+2 * s1 = sum(arr)
+// this means,
+target(s1) == sum / 2
+```
 
 This problem is exactly as previous problem - [[02 - Subset Sum Problem]]
 we just need to check two cases -
 - sum(arr) should not odd as we can not find have s1 == s2 with sum(arr) == odd
 - We need find if (sum / 2) is present as subset in the given array using same code as - [[02 - Subset Sum Problem]]
 
+**Code:**
 
 ```java
 
