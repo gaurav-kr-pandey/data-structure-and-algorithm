@@ -52,6 +52,8 @@ prefixSum[j] - prefixSum[i - 1] = k
 We can use a **HashMap** to count how many times each `prefixSum` has occurred so far.  
 If `prefixSum[j] - k` has occurred before, we have found a subarray ending at current index with sum `k`.
 
+![[Pasted image 20250819101626.png]]
+
 ---
 ### Example:
 
