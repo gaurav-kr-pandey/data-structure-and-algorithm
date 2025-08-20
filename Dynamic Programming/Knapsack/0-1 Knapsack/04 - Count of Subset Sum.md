@@ -25,19 +25,18 @@ In this problem we will count both choices:
 Do not return if `target == 0` since there can be value i.e; nums[i] == 0 which again forms a subset, hence explore till last (n).
 
 ```java
-        if (n == 0) {
-            if (target == 0) {
-                return 1;
-            }
-            return 0;
+    if (n == 0) {
+        if (target == 0) {
+            return 1;
         }
+        return 0;
+    }
 ```
 
 
 **Code:**
 
 ```java
-
 class Solution {
     
     int mod = 1000000007;
@@ -79,6 +78,5 @@ class Solution {
         return dp[n][target] % mod;
     }
 }
-
 ```
 
