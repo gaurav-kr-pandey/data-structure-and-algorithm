@@ -4,17 +4,18 @@ You are given an adjacency list, **adj** of **Undirected Graph** having **u
 
 **Examples :**
 
-**Input:** `adj[][]` = `[[1, 3], [0, 2], [1, 6], [0, 4], [3, 5], [4, 6], [2, 5, 7, 8], [6, 8], [7, 6]]`, `src = 0`
+**Input:** 
+`adj[][]` = `[[1, 3], [0, 2], [1, 6], [0, 4], [3, 5], [4, 6], [2, 5, 7, 8], [6, 8], [7, 6]]`, 
+`src = 0`
 **Output:** `[0, 1, 2, 1, 2, 3, 3, 4, 4]`  
-![](https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/711976/Web/Other/blobid0_1745302423.jpg) 
-
-**Input:** `adj[][]= [[3], [3], [], [0, 1]], src = 3`
-**Output:** `[1, 1, -1, 0]`
-![](https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/711976/Web/Other/blobid0_1747111194.webp)
+![|250](https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/711976/Web/Other/blobid0_1745302423.jpg) 
 
 ### Intuition:
 
+Since it is a unweighted graph, finding shortest path is exactly same as [[03 - Breadth First Search (BFS)]]. We just need to maintain a path integer with length `V = vertices`.
 
+While traversing we can keep updating the `path[]` array. As given in the question that its a unweighted graph we can assume each edge to have `weight == 1`
+weight to self is `0`.
 
 ### Code:
 

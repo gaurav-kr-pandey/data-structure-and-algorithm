@@ -1,3 +1,5 @@
+https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1
+
 **Depth First Search (DFS)** is a **graph traversal algorithm** that explores as far as possible along each branch before backtracking.
 - Uses **Recursion (Stack)** or explicit **Stack** data structure.
 - Traverses graph in a **depth-wise manner**.

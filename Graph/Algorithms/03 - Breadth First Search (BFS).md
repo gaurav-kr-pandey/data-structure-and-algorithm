@@ -1,3 +1,5 @@
+https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1
+
 **Breadth First Search (BFS)** is a **graph traversal algorithm** that explores vertices in the order of their distance from the source node (level by level).
 - Uses **Queue (FIFO)** data structure.
 - Ensures shortest path in an **unweighted graph**.
