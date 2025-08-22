@@ -12,13 +12,12 @@ Return _the total number of **provinces**_.
 
 ![](https://assets.leetcode.com/uploads/2020/12/24/graph1.jpg)
 
-**Input:** isConnected = [[1,1,0],[1,1,0],[0,0,1]]
-**Output:** 2
+**Input:** `isConnected = [[1,1,0],[1,1,0],[0,0,1]]`
+**Output:** `2`
 
-### Solution:
+### Intuition:
 
 This problem is same as number of connected components.
-
 
 ```java
 class Solution {
