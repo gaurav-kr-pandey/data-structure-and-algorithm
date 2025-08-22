@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Graph/Algorithms/06 - Detect cycle in a undirected graph.md",
-                "mode": "preview",
+                "file": "Graph/Algorithms/09 - Detect cycle in a directed graph - II.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06 - Detect cycle in a undirected graph"
+              "title": "09 - Detect cycle in a directed graph - II"
             }
           }
         ]
@@ -184,12 +184,17 @@
   },
   "active": "c4fb4b037b670585",
   "lastOpenFiles": [
+    "Graph/Algorithms/08 - Topological Sorting (Khan's BFS Based Algorithm).md",
+    "Graph/Algorithms/07 - Detect cycle in a directed graph (DFS Based).md",
+    "Pasted image 20250822110702.png",
+    "Pasted image 20250822105609.png",
+    "Pasted image 20250822102254.png",
+    "Graph/Algorithms/06 - Detect cycle in a undirected graph.md",
     "Graph/Algorithms/01 - Graph.md",
     "Graph/Algorithms/Untitled.canvas",
     "Graph/Algorithms/Untitled.md",
     "Graph/Algorithms/Untitled.base",
     "Bit Manipulation/01 - Bit Manipulation.md",
-    "Graph/Algorithms/06 - Detect cycle in a undirected graph.md",
     "Graph/Algorithms/05 - Shortest Path in unweighted graph.md",
     "Graph/Algorithms/04 - Depth First Search (DFS).md",
     "Graph/Algorithms/02 - Graph Classifications.md",
@@ -201,14 +206,12 @@
     "Graph/Algorithms/10 - Topological Sorting (DFS Based Algorithm).md",
     "Graph/Algorithms/03 - Breadth First Search (BFS).md",
     "Graph/Algorithms/09 - Detect cycle in a directed graph - II.md",
-    "Graph/Algorithms/08 - Topological Sorting (Khan's BFS Based Algorithm).md",
     "Pasted image 20250821195529.png",
     "Pasted image 20250821195432.png",
     "Graph/Algorithms/Cheatsheet.md",
     "Graph/Algorithms/Graph Basics.md",
     "Array/03 - Hard/13 - Largest Subarray with ZERO sum.md",
     "Sliding Window/03 - Subarray/02 - Longest subarray with sum k(Includes Negative).md",
-    "Graph/Algorithms/07 - Detect cycle in a directed graph (DFS Based).md",
     "Utilities/Utility Classes and Methods.md",
     "Utilities",
     "Dynamic Programming/Longest Common Subsequence/01 - Longest Common Subsequence.md",
@@ -220,10 +223,7 @@
     "z-images/Pasted image 20250819103320.png",
     "z-images/Pasted image 20250819103316.png",
     "z-images/Pasted image 20250819102535.png",
-    "z-images/Pasted image 20250819101626.png",
-    "Pasted image 20250819101431.png",
     "Dynamic Programming/Misc/Image",
-    "Dynamic Programming/Misc/Image/Pasted image 20250818084803.png",
     "Dynamic Programming/Misc",
     "Tree/02 - Binary Search Tree",
     "Tree/01 - Binary Tree",
