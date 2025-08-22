@@ -7,11 +7,14 @@ Given an **undirected graph** with **V** vertices and **E** edges, represe
 **Input:** `V = 4, E = 4, edges[][] = [[0, 1], [0, 2], [1, 2], [2, 3]]`
 **Output:** true
 **Explanation:** 
-![](https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/891735/Web/Other/blobid1_1743510240.jpg)   
-1 -> 2 -> 0 -> 1 is a cycle.
 
-### Solution:
+![|200](https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/891735/Web/Other/blobid1_1743510240.jpg)   
 
+`1 -> 2 -> 0 -> 1 is a cycle.`
+### Intuition:
+We will do DFS and keep exploring nodes in Depth first search way, if a node is already visited in this process then we can say there is cycle but that node should not be parent node since it is a undirected graph $u \to v$ == $v \to u$.
+
+**Code:**
 
 
 ```java
@@ -41,9 +44,8 @@ class Solution {
         return adj;
     }
     
-    private boolean hasCycle(boolean[] vis, List<List<Integer>> adj, int u, int par) {
+    boolean hasCycle(boolean[] vis, List<List<Integer>> adj, int u, int par) {
         vis[u] = true;
-        
         for (int v : adj.get(u)) {
             if (!vis[v]) {
                 if (hasCycle(vis, adj, v, u)) {
