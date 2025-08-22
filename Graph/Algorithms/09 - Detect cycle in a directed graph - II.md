@@ -1,4 +1,6 @@
-We can simply use - [[08 - Topological Sorting (Khan's BFS Based Algorithm)]]
+We can simply use - [[08 - Topological Sorting (Khan's BFS Based Algorithm)]].
+Let's understand this -
+In topo sort we process all the independent nodes and in this way process all the nodes eventually. So the idea is simple, if there is a cycle then, topo sort will not be able to process all the nodes because topo sort works only for `DAG`.
 
 ### Code:
 
