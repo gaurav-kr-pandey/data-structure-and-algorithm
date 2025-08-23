@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Graph/Algorithms/07 - Detect cycle in a directed graph (DFS Based).md",
-                "mode": "source",
+                "file": "Stack/01 - Next Greater Element - I.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07 - Detect cycle in a directed graph (DFS Based)"
+              "title": "01 - Next Greater Element - I"
             }
           }
         ]
@@ -182,11 +182,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c35a92805f6dc14f",
+  "active": "3c067660ce3c73b6",
   "lastOpenFiles": [
+    "Stack/02 -.md",
+    "Stack/01 - Next Greater Element - I.md",
+    "Stack/00 - Stack.md",
+    "Stack/Cheatsheet.md",
+    "Graph/Algorithms/07 - Detect cycle in a directed graph (DFS Based).md",
     "Graph/Problems/05 - Flood Fill.md",
     "Graph/Problems/01 - Number of proviences.md",
-    "Stack/Cheatsheet.md",
     "LinkedList/01 - Find Middle Element.md",
     "z-images/Pasted image 20250821195432.png",
     "Graph/Algorithms/15 - Bipartite Graph (DFS).md",
@@ -200,7 +204,6 @@
     "Graph/Algorithms/11 - Shortest Path in DAG.md",
     "Graph/Algorithms/10 - Topological Sorting (DFS Based Algorithm).md",
     "Graph/Algorithms/09 - Detect cycle in a directed graph - II.md",
-    "Graph/Algorithms/07 - Detect cycle in a directed graph (DFS Based).md",
     "Graph/Algorithms/06 - Detect cycle in a undirected graph.md",
     "Graph/Algorithms/05 - Shortest Path in unweighted graph.md",
     "Graph/Algorithms/02 - Graph Classifications.md",
@@ -214,9 +217,6 @@
     "Graph/Algorithms/03 - Breadth First Search (BFS).md",
     "z-images/Pasted image 20250821195529.png",
     "Graph/Algorithms/Graph Basics.md",
-    "Array/03 - Hard/13 - Largest Subarray with ZERO sum.md",
-    "Sliding Window/03 - Subarray/02 - Longest subarray with sum k(Includes Negative).md",
-    "Utilities/Utility Classes and Methods.md",
     "Utilities",
     "z-images/Pasted image 20250818101640.png",
     "z-images",

@@ -4,6 +4,8 @@
 ---
 **Practice:** [LeetCode](https://leetcode.com/problems/next-greater-element-i/description/) , [geeksforgeeks](https://www.geeksforgeeks.org/problems/next-larger-element-1587115620/1)
 
+`Nearest Greater to Right | Next Largest Element`
+
 **Expected Approach: Using Stack - O(n) Time and O(n) Space**
 
 > The idea is to use [stack](https://www.geeksforgeeks.org/stack-data-structure/) to find the **next greater element** by using the **Last-In-First-Out (LIFO) property.** We traverse the array from right to left. For each element, we remove elements from the stack that are **smaller than or equal** to it, as they cannot be the next greater element. If the stack is not empty after this, the top element of the stack is the next greater element for the current element. We then **push** the current element onto the stack.
