@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stack/01 - Next Greater Element - I.md",
-                "mode": "preview",
+                "file": "Stack/03 -.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Next Greater Element - I"
+              "title": "03 -"
             }
           }
         ]
@@ -184,8 +184,11 @@
   },
   "active": "3c067660ce3c73b6",
   "lastOpenFiles": [
-    "Stack/02 -.md",
-    "Stack/01 - Next Greater Element - I.md",
+    "Stack/02 - Stock Span problem.md",
+    "Stack/01 - Next Greater Element to Right.md",
+    "Stack/03 -.md",
+    "Array/02 - Medium/13 - Stock Buy and Sell - I.md",
+    "Array/02 - Medium/14 - Stock Buy and Sell - II.md",
     "Stack/00 - Stack.md",
     "Stack/Cheatsheet.md",
     "Graph/Algorithms/07 - Detect cycle in a directed graph (DFS Based).md",
@@ -213,10 +216,7 @@
     "z-images/Pasted image 20250822102254.png",
     "Graph/Algorithms/Untitled.base",
     "Bit Manipulation/01 - Bit Manipulation.md",
-    "Graph/Algorithms/04 - Depth First Search (DFS).md",
-    "Graph/Algorithms/03 - Breadth First Search (BFS).md",
     "z-images/Pasted image 20250821195529.png",
-    "Graph/Algorithms/Graph Basics.md",
     "Utilities",
     "z-images/Pasted image 20250818101640.png",
     "z-images",
