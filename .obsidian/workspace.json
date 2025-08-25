@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stack/01 - Next Greater Element to Right.md",
-                "mode": "preview",
+                "file": "Stack/03 - Maximum Area Histogram.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Next Greater Element to Right"
+              "title": "03 - Maximum Area Histogram"
             }
           }
         ]
@@ -186,7 +186,7 @@
   "lastOpenFiles": [
     "Stack/02 - Stock Span problem.md",
     "Stack/01 - Next Greater Element to Right.md",
-    "Stack/03 -.md",
+    "Stack/03 - Maximum Area Histogram.md",
     "Array/02 - Medium/13 - Stock Buy and Sell - I.md",
     "Array/02 - Medium/14 - Stock Buy and Sell - II.md",
     "Stack/00 - Stack.md",
