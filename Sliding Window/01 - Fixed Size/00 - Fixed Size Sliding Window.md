@@ -4,7 +4,7 @@ A technique where you analyze **subarrays or substrings** of a **fixed length `k
 
 ---
 ## 2. Why Use It?
-Avoid recalculating results for overlapping subarrays and reduce time complexity from O(n*k) to O(n).
+Avoid recalculating results for overlapping subarrays and reduce time complexity from $O(n * k)$ to $O(n)$.
 
 ---
 ## 3. Core Idea
@@ -20,15 +20,13 @@ You see `k` letters at a time, then slide the glass by one letter, dropping one 
 ## 5. Visual Example
 For `arr = [1, 3, -1, -3, 5, 3, 6, 7]` and `k = 3`:
 
-Window indices: 0-2 -> [1, 3, -1], sum = 3  
-Slide: Remove 1, add -3 -> [3, -1, -3], sum updated
-
+Window indices: `0-2` -> `[1, 3, -1]`, `sum = 3`  
+Slide: remove `1`, add `-3` -> `[3, -1, -3]`, sum updated
 
 ---
-
 ## 6. Fixed Size Sliding Window Template
 
-> If using extra Data Structure (like Deque or Queue) 
+> If using extra Data Structure (like **Deque** or **Queue**) 
 
 ```java
 while (j < n) {
@@ -58,7 +56,8 @@ while (j < n) {
 }
 ```
 
-> If not using extra DS, remove that step
+
+> If not using extra data structure (Deque, Queue etc.), remove that step
 
 ```java
 while (j < n) {
@@ -85,7 +84,6 @@ while (j < n) {
 Use this when you need to process **all subarrays/substrings of exact size `k`**, such as computing sum, max, min, count, or any aggregate.
 
 ---
-
 ## 8. Use Cases & Variations
 
 | Problem Type          | Description                          | Extra Data Structure Needed |
@@ -100,22 +98,22 @@ Use this when you need to process **all subarrays/substrings of exact size `k`**
 
 ## 9. Common Problems
 
-|Problem|Link|
-|---|---|
-|Maximum Average Subarray I|https://leetcode.com/problems/maximum-average-subarray-i/|
-|Sliding Window Maximum|https://leetcode.com/problems/sliding-window-maximum/|
-|First Negative Integer in Every Window of Size K|https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k/0|
+| Problem                                          | Link                                                                                           |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| Maximum Average Subarray I                       | https://leetcode.com/problems/maximum-average-subarray-i/                                      |
+| Sliding Window Maximum                           | https://leetcode.com/problems/sliding-window-maximum/                                          |
+| First Negative Integer in Every Window of Size K | https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k/0 |
 
 ---
 
 ## 10. Common Mistakes & Fixes
 
-|Mistake|Fix|
-|---|---|
-|Incorrect window size check|Always use `j - i + 1 == k`|
-|Forgetting to shrink window|Subtract `arr[i]` from sum and increment `i`|
-|Updating result before window formed|Update result only when window size equals `k`|
-|Ignoring edge cases|Handle cases like `k > arr.length` or empty array|
+| Mistake                              | Fix                                               |
+| ------------------------------------ | ------------------------------------------------- |
+| Incorrect window size check          | Always use `j - i + 1 == k`                       |
+| Forgetting to shrink window          | Subtract `arr[i]` from sum and increment `i`      |
+| Updating result before window formed | Update result only when window size equals `k`    |
+| Ignoring edge cases                  | Handle cases like `k > arr.length` or empty array |
 
 ---
 

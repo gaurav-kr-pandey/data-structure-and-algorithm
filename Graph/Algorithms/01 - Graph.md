@@ -1,6 +1,6 @@
-# 📘 Introduction to Graph in DSA
+# Introduction to Graph in DSA
 ---
-## 🔷 What is a Graph?
+## What is a Graph?
 A **graph** is a data structure that consists of:
 - A set of **vertices** (or nodes)
 - A set of **edges** connecting pairs of vertices
@@ -11,7 +11,7 @@ A **graph** is a data structure that consists of:
     - E is a set of edges (V × V)
 
 ---
-## 🔷 Types of Graphs
+## Types of Graphs
 
 |Type|Description|
 |---|---|
@@ -25,13 +25,14 @@ A **graph** is a data structure that consists of:
 |**Disconnected**|Some nodes are unreachable from others|
 
 ---
-## 🔷 Graph Representations
+## Graph Representations
 ### 1. **Adjacency Matrix**
 - 2D array of size `V x V`
 - `matrix[i][j] = 1` if there is an edge from i to j
 
 ```java
-int V = 4; int[][] adjMatrix = new int[V][V];  // Add edge from 0 to 1 
+int V = 4; 
+int[][] adjMatrix = new int[V][V];  // Add edge from 0 to 1 
 adjMatrix[0][1] = 1; 
 adjMatrix[1][0] = 1; // For undirected
 ```
@@ -65,7 +66,7 @@ adjList.get(1).add(0); // For undirected
 
 ---
 
-## 🔷 Basic Graph Terminologies
+## Basic Graph Terminologies
 
 - **Degree:** Number of edges incident to a vertex
     - In-degree / Out-degree for directed graphs
@@ -75,7 +76,7 @@ adjList.get(1).add(0); // For undirected
 
 ---
 
-## 🔷 Traversal Techniques
+## Traversal Techniques
 ### 1. **Breadth-First Search (BFS)**
 - Level-wise traversal (Queue)
 - Good for shortest path in unweighted graphs
@@ -121,7 +122,8 @@ void dfs(int node, List<List<Integer>> graph, boolean[] visited) {
 ```
 ---
 
-## 🔷 Applications of Graphs
+## Applications of Graphs
+
 - Social networks
 - Maps and navigation (shortest path)
 - Web crawling

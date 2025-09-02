@@ -44,22 +44,3 @@ while (j < n) {
     j++; // Always move right pointer
 }
 ```
-
-```java
-int i = 0, j = 0;
-while (j < n) {
-
-	// keep adding till condition is met
-    // expand the window
-
-    while (condition violated) {
-	    // Keep reducing till condition is not violated
-        // shrink the window
-        i++;
-    }
-
-    // process result
-    j++;
-}
-
-```
