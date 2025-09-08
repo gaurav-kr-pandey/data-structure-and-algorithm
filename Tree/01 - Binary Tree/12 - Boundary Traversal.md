@@ -86,7 +86,7 @@ class Solution {
     }
 
     private void addRightBoundary(Node node, ArrayList<Integer> list) {
-        Stack<Integer> stack = new Stack<>();
+        Deque<Integer> stack = new ArrayDeque<>();
         while (node != null) {
             if (!isLeafNode(node)) stack.push(node.data);
             node = (node.right != null) ? node.right : node.left;
