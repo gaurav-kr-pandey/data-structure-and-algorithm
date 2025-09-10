@@ -50,50 +50,57 @@ The boundary includes:
 ```java
 class Solution {
     public ArrayList<Integer> boundaryTraversal(Node node) {
-        ArrayList<Integer> res = new ArrayList<>();
-        if (node == null) return res;
+        ArrayList<Integer> boundaries = new ArrayList<>();
+        
+        if (node == null) {
+            return boundaries;
+        }
+        
+        if (!isLeafNode(node))
+            boundaries.add(node.data);
+        
+        addLeftBoundary(node.left, boundaries);
+        addBottomBoundary(node, boundaries);
+        addRightBoundary(node.right, boundaries);
 
-        // Add root (if not leaf)
-        if (!isLeafNode(node)) res.add(node.data);
-
-        // Left boundary
-        addLeftBoundary(node.left, res);
-
-        // Leaves
-        addBottomBoundary(node, res);
-
-        // Right boundary
-        addRightBoundary(node.right, res);
-
-        return res;
+        return boundaries;
     }
-
+    
     private void addLeftBoundary(Node node, ArrayList<Integer> list) {
-        while (node != null) {
-            if (!isLeafNode(node)) list.add(node.data);
+        if (node == null) return;
+        
+        while (node != null && !isLeafNode(node)) {
+            list.add(node.data);
             node = (node.left != null) ? node.left : node.right;
         }
-    }
 
+    }
+    
     private void addBottomBoundary(Node node, ArrayList<Integer> list) {
         if (node == null) return;
-        if (isLeafNode(node)) {
+        
+        if (isLeafNode(node))
             list.add(node.data);
-            return;
-        }
+        
         addBottomBoundary(node.left, list);
         addBottomBoundary(node.right, list);
     }
-
+    
     private void addRightBoundary(Node node, ArrayList<Integer> list) {
+        if (node == null) return;
+        
         Deque<Integer> stack = new ArrayDeque<>();
-        while (node != null) {
-            if (!isLeafNode(node)) stack.push(node.data);
+        while (node != null && !isLeafNode(node)) {
+            stack.push(node.data);
             node = (node.right != null) ? node.right : node.left;
         }
-        while (!stack.isEmpty()) list.add(stack.pop());
+        
+        while (!stack.isEmpty()) {
+            list.add(stack.pop());
+        }
     }
-
+    
+    
     private boolean isLeafNode(Node curr) {
         return curr.left == null && curr.right == null;
     }
