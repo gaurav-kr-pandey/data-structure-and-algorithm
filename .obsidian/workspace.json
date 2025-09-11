@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tree/01 - Binary Tree/19 - Maximum Width.md",
+                "file": "Tree/01 - Binary Tree/23 - Count of Nodes in CBT.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "19 - Maximum Width"
+              "title": "23 - Count of Nodes in CBT"
             }
           }
         ]
@@ -182,10 +182,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c35a92805f6dc14f",
+  "active": "a1a23217a67146e7",
   "lastOpenFiles": [
-    "Tree/01 - Binary Tree/18 - Least Common Ancestor.md",
+    "Tree/01 - Binary Tree/22 - Burning Tree.md",
+    "Tree/01 - Binary Tree/23 - Count of Nodes in CBT.md",
+    "Tree/01 - Binary Tree/21 - All Nodes at Distance K.md",
+    "Graph/Algorithms/03 - Breadth First Search (BFS).md",
+    "Tree/01 - Binary Tree/20 - Children Sum in a Binary Tree.md",
     "Tree/01 - Binary Tree/19 - Maximum Width.md",
+    "Tree/01 - Binary Tree/18 - Least Common Ancestor.md",
     "Tree/01 - Binary Tree/17 - Root to Leaf.md",
     "z-images/Pasted image 20250910194539.png",
     "Tree/01 - Binary Tree/16 - Boundary Traversal.md",
@@ -206,12 +211,7 @@
     "LinkedList/06 - Odd Even LL.md",
     "LinkedList/07 - Remove Nth Node From End of List.md",
     "LinkedList/05 - Check if LL is palindrome.md",
-    "LinkedList/04 - Detect loop in LL - II.md",
-    "LinkedList/03 - Detect a loop in LL.md",
-    "LinkedList/02 - Reverse a LinkedList.md",
-    "LinkedList/01 - Find Middle Element.md",
     "z-images/Pasted image 20250902123612.png",
-    "Tree/01 - Binary Tree/11 - Zig Zag Traversal.md",
     "z-images/Pasted image 20250902223749.png",
     "z-images/Pasted image 20250902180516.png",
     "Sliding Window/02 - Variable Size/Template.java",
