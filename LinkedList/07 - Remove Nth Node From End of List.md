@@ -3,23 +3,23 @@ https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 ```java
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode temp = new ListNode(-1, head);
+        ListNode dummy = new ListNode(-1, head);
         ListNode curr = head;
-        ListNode d = temp;
+        ListNode result = dummy;
 
-        while (curr != null && n-- > 0) {
+        while (n-- > 0 && curr != null) {
             curr = curr.next;
         }
 
         while (curr != null) {
+            dummy = dummy.next;
             curr = curr.next;
-            temp = temp.next;
         }
 
-        temp.next = temp.next.next;
+        dummy.next = dummy.next.next;
 
-        return d.next;
-    } 
+        return result.next;
+    }
 }
 ```
 

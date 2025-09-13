@@ -16,6 +16,9 @@ There is a cycle in a linked list if there is some node in the list that can be 
 
 ## Solution:
 
+Ref: Floyd’s Tortoise and Hare Algorithm
+
+
 ```java
 public class Solution {
     public ListNode detectCycle(ListNode head) {

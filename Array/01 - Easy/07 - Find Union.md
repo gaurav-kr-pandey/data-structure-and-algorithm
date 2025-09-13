@@ -1,8 +1,6 @@
 
 
 ```java
-import java.util.*;
-
 public class UnionSortedArrays {
 
     public static List<Integer> findUnion(int[] arr1, int[] arr2) {
@@ -57,5 +55,4 @@ public class UnionSortedArrays {
         System.out.println("Union: " + result);
     }
 }
-
 ```

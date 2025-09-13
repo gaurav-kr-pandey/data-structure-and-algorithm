@@ -3,13 +3,14 @@ https://leetcode.com/problems/majority-element-ii/
 Given an integer array of size `n`, find all elements that appear more than `⌊ n/3 ⌋` times.
 
 **Example 1:**
-**Input:** nums = [3,2,3]
-**Output:** [3]
+**Input:** nums = `[3,2,3]`
+**Output:** `[3]`
 
 ## Solution 
 
-**Moore's Voting Algorithm** :
+**Moore's Voting Algorithm** : extended version of [[12 - Majority Element - I]]
 
+## Code:
 
 ```java
 class Solution {
