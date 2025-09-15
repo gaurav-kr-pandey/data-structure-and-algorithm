@@ -5,12 +5,12 @@ Given a **non-empty** array of integers `nums`, every element appears _twice
 You must implement a solution with a linear runtime complexity and use only constant extra space.
 
 **Example 1:**
-**Input:** nums = [2,2,1]
-**Output:** 1
+**Input:** `nums` = `[2,2,1]`
+**Output:** `1`
 
 **Example 2:**
-**Input:** nums = [4,1,2,1,2]
-**Output:** 4
+**Input:** `nums` = `[4,1,2,1,2]`
+**Output:** `4`
 ### Intuition:
 
 We can start thinking by *Brute Force* in which we can use two loops $i....n$ and a nested $j = i + 1....n$ 
