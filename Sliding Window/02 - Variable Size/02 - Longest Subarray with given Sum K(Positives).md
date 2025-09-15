@@ -5,6 +5,8 @@
 
 **Approach:** Sliding window (Works only for positive numbers)
 
+### Code:
+
 ```java
 class Solution {
     public int subarraySum(int[] nums, int k) {
