@@ -20,8 +20,6 @@ class Solution {
             }
         }
 
-        //res[n - 1] = nums[k];
-
         return res;
     }
 }
