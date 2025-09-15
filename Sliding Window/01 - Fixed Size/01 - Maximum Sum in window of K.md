@@ -21,7 +21,7 @@ class Solution {
 
         while (j < n) {
 		    // No DS(Deque, Queue) Used to Remove Elements
-		    
+
 		    // Add curr element to window
             sum += arr[j];
 

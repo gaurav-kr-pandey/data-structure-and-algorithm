@@ -14,11 +14,12 @@ Given an array of integers **arr[]** and a number **k**, count the number of 
 because , `a ^ b = c` → `a = b ^ c`
 
 If `prefixXor[j] ^ prefixXor[i-1] = k`, then:
+
 ```
-prefixXor[i-1] = prefixXor[j] ^ k
+prefixXor[i - 1] = prefixXor[j] ^ k
 ```
 
-`=> Code:`
+## Code:
 
 ```java
 class Solution {

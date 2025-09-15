@@ -13,13 +13,10 @@
 > Key Observations -
 
 `subarray` , `sum`, `includes negative numbers`, `length of longest subarray`
-
 This is exactly same same as [[02 - Longest subarray with sum k(Includes Negative)]] where `k = 0`.
-
 Ref: [[02 - Longest subarray with sum k(Includes Negative)]]
 
 **Code:**
-
 
 ```java
 class Solution {

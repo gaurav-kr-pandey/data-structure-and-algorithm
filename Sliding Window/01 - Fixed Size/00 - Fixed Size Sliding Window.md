@@ -1,32 +1,50 @@
-## 1. What is Fixed Size Sliding Window?
+## What is Fixed Size Sliding Window?
 
-A technique where you analyze **subarrays or substrings** of a **fixed length `k`** by sliding a window of size `k` over the array/string one element at a time.
-
----
-## 2. Why Use It?
-Avoid recalculating results for overlapping subarrays and reduce time complexity from $O(n * k)$ to $O(n)$.
+A technique where you analyze [[subarray]] or substrings of a **fixed length `k`** by sliding a window of size `k` over the array/string one element at a time.
 
 ---
-## 3. Core Idea
+## Why Use It?
+Avoid recalculating results for overlapping subarrays and reduce time complexity from 
+
+$O(n * k) \to O(n)$.
+
+---
+## Core Idea
 - Compute result for the first window.
 - Slide the window forward by removing the element going out and adding the element coming in.
-
 ---
-## 4. Real-World Analogy
-A magnifying glass scanning text:  
-You see `k` letters at a time, then slide the glass by one letter, dropping one on the left and adding one on the right.
+## Visual Example
 
----
-## 5. Visual Example
 For `arr = [1, 3, -1, -3, 5, 3, 6, 7]` and `k = 3`:
-
 Window indices: `0-2` -> `[1, 3, -1]`, `sum = 3`  
 Slide: remove `1`, add `-3` -> `[3, -1, -3]`, sum updated
 
 ---
-## 6. Fixed Size Sliding Window Template
+## Fixed Size Sliding Window Template
 
-> If using extra Data Structure (like **Deque** or **Queue**) 
+> In Sliding Window sometimes we need to use extra Data Structure, If using extra Data Structure (like **Deque** or **Queue**) then include step 1 else exclude it
+
+#### Template:
+
+```lisp
+for (j ... n) {
+	STEP 1: If using extra DS (like Deque or Queue)
+			Remove elements out of window range (i.e., j - i + 1 > k)
+			Remove elements based on problem e.g; smaller/larger than current
+			Maintain state of DS
+	STEP 2: Add current element to Window/DS
+		    (e.g., add to sum, queue, deque, freq map etc.)
+		if (window_size == k) {
+			// window_size == j - i + 1
+			STEP 3: When window size reaches 'k'
+			        Calculate or update result
+			        Remove i-th element from sum or DS
+				    Slide window by incrementing 'i'
+		}
+	STEP 4: Expand window
+}
+```
+
 
 ```java
 while (j < n) {
@@ -34,13 +52,15 @@ while (j < n) {
     /**
      * Step 1: If using extra DS (like Deque or Queue)
      *         - Remove elements out of window range (i.e., j - i + 1 > k)
-     *         - Remove elements based on problem (e.g., smaller/larger than current)
+     *         - Remove elements based on problem 
+			       (e.g., smaller/larger than current)
      *         - Maintain state of DS
      */
 
-    // Step 2: Add current element to window/DS
-    //         (e.g., add to sum, queue, deque, freq map etc.)
-
+    /** Step 2: Add current element to Window/DS
+    *              (e.g., add to sum, queue, deque, freq map etc.)
+	*/
+	
     if (j - i + 1 == k) {
         /**
          * Step 3: When window size reaches 'k'
@@ -59,15 +79,33 @@ while (j < n) {
 
 > If not using extra data structure (Deque, Queue etc.), remove that step
 
+
+```lisp
+for (j ... n) {
+	STEP 1: (Not Required)
+	STEP 2: Add current element to Window/DS
+		    (e.g., add to sum, queue, deque, freq map etc.)
+		
+		if (window_size == k) {
+			// window_size == j - i + 1
+			STEP 3: When window size reaches 'k'
+			        Calculate or update result
+			        Remove i-th element from sum or DS
+				    Slide window by incrementing 'i'
+		}
+	STEP 4: Expand window
+}
+```
+
 ```java
 while (j < n) {
 
-    // Step 1: Add current element to window/DS
+    // Step 2: Add current element to window/DS
     //         (e.g., add to sum, queue, deque, freq map etc.)
 
     if (j - i + 1 == k) {
         /**
-         * Step 2: When window size reaches 'k'
+         * Step 3: When window size reaches 'k'
          *         - Calculate or update result
          *         - Remove i-th element from sum or DS
          *         - Slide window by incrementing 'i'
@@ -79,12 +117,12 @@ while (j < n) {
     j++;
 }
 ```
-## 7. When to Use
+## When to Use
 
 Use this when you need to process **all subarrays/substrings of exact size `k`**, such as computing sum, max, min, count, or any aggregate.
 
 ---
-## 8. Use Cases & Variations
+## Use Cases & Variations
 
 | Problem Type          | Description                          | Extra Data Structure Needed |
 | --------------------- | ------------------------------------ | --------------------------- |
@@ -96,7 +134,7 @@ Use this when you need to process **all subarrays/substrings of exact size `k`**
 
 ---
 
-## 9. Common Problems
+## Common Problems
 
 | Problem                                          | Link                                                                                           |
 | ------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
@@ -106,7 +144,7 @@ Use this when you need to process **all subarrays/substrings of exact size `k`**
 
 ---
 
-## 10. Common Mistakes & Fixes
+## Common Mistakes & Fixes
 
 | Mistake                              | Fix                                               |
 | ------------------------------------ | ------------------------------------------------- |
@@ -117,7 +155,7 @@ Use this when you need to process **all subarrays/substrings of exact size `k`**
 
 ---
 
-## 11. Debugging Tips
+## Debugging Tips
 
 - Print variables: `i`, `j`, current window elements, `sum`, and `result`
 - Dry run on edge cases like:
@@ -126,14 +164,13 @@ Use this when you need to process **all subarrays/substrings of exact size `k`**
     - All negative or all positive numbers
 - Manually simulate sliding window movement with sample input
 ---
-## 12. Best Practices
+## Best Practices
 - Maintain window size using `j - i + 1`
 - Always shrink window after processing a full window
 - Avoid recomputing sums by maintaining rolling sum
 - Use appropriate data structures if problem requires more than sums (e.g., queues or deques)
 
----
-## 13. Interview Pattern Recognition
+## Interview Pattern Recognition
 
 | Clue in Question                    | Likely Approach              |
 | ----------------------------------- | ---------------------------- |
@@ -143,9 +180,7 @@ Use this when you need to process **all subarrays/substrings of exact size `k`**
 | “Count occurrences in window”       | Fixed window logic           |
 | “Length exactly k”                  | Two pointer window of size k |
 
----
-
-## 14. Fixed vs Variable Sliding Window
+## Fixed vs Variable Sliding Window
 
 | Feature          | Fixed Size Window                    | Variable Size Window              |
 | ---------------- | ------------------------------------ | --------------------------------- |
@@ -153,9 +188,7 @@ Use this when you need to process **all subarrays/substrings of exact size `k`**
 | Use cases        | Exact subarrays of length k          | Longest/shortest satisfying cond. |
 | Pointer movement | Increment both `i` and `j` carefully | Expand `j`, shrink `i` as needed  |
 
----
-
-## 15. Summary
+## Summary
 
 - Fixed size sliding window optimizes repeated computation on subarrays of length `k`.
 - Use two pointers: `i` (start) and `j` (end) to maintain window.

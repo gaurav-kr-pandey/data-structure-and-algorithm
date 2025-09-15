@@ -9,14 +9,15 @@ Given an array **`arr[]`**  and a positive integer **k**, find the first neg
 **Input:** `arr[]` = `[-8, 2, 3, -6, 10]` , k = 2
 **Output:** `[-8, 0, -6, -6]`
 **Explanation:**
-Window `[-8, 2]` First negative integer is `-8`.
-Window `[2, 3]` No negative integers, output is `0`.
-Window `[3, -6]` First negative integer is `-6`.
-Window `[-6, 10]` First negative integer is `-6`.
+
+```
+Window [-8, 2]   -->  First negative integer is -8
+Window [2, 3]    -->  No negative integers, output is 0
+Window [3, -6]   -->  First negative integer is -6
+Window [-6, 10]  --> First negative integer is -6
+```
 
 ### Solution:
-
-
 
 ```java
 class Solution {
@@ -42,10 +43,10 @@ class Solution {
             if (j - i + 1 == k) {
                 // Calculate result
                 list.add(q.isEmpty() ? 0 : arr[q.peek()]);
-                // Shift left pointer by 1
+                // Shift forward left pointer by 1
                 i++;
             }
-            // Shift right pointer by 1
+            // Shift forward right pointer by 1
             j++;
         }
 

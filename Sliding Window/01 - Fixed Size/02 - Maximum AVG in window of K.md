@@ -1,6 +1,6 @@
 https://leetcode.com/problems/maximum-average-subarray-i/description/
 
-
+## Code:
 
 ```java
 class Solution {
