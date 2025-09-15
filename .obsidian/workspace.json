@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sliding Window/01 - Fixed Size/05 - Sliding Window Maximum.md",
+                "file": "Sliding Window/03 - Subarray/02 - Longest subarray with sum k(Includes Negative).md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05 - Sliding Window Maximum"
+              "title": "02 - Longest subarray with sum k(Includes Negative)"
             }
           },
           {
@@ -198,8 +198,16 @@
   },
   "active": "a1a23217a67146e7",
   "lastOpenFiles": [
-    "Sliding Window/01 - Fixed Size/00 - Fixed Size Sliding Window.md",
+    "Sliding Window/03 - Subarray/01 - Longest Subarray with given Sum K(Positives).md",
+    "Sliding Window/02 - Variable Size/07 - Longest Repeating Character Replacement.md",
+    "Sliding Window/02 - Variable Size/06 - Maximum Consecutive Ones - III.md",
+    "Sliding Window/02 - Variable Size/05 - Fruits into baskets.md",
+    "Sliding Window/02 - Variable Size/04 - Longest Substring Without Repeating Characters.md",
+    "Sliding Window/02 - Variable Size/03 - Longest Substring with k unique characters.md",
+    "Sliding Window/02 - Variable Size/01 - Variable Size Sliding Window.md",
+    "Sliding Window/02 - Variable Size/02 - Longest Subarray with given Sum K(Positives).md",
     "Sliding Window/01 - Fixed Size/05 - Sliding Window Maximum.md",
+    "Sliding Window/01 - Fixed Size/00 - Fixed Size Sliding Window.md",
     "Sliding Window/01 - Fixed Size/04 - Count occurrence of anagrams.md",
     "Sliding Window/01 - Fixed Size/03 - First negative integer in every window of size k.md",
     "Sliding Window/01 - Fixed Size/02 - Maximum AVG in window of K.md",
@@ -216,14 +224,6 @@
     "Array/02 - Medium/19 - Set Matrix Zeroes.md",
     "Array/02 - Medium/18 - Longest Consecutive Subsequnce.md",
     "Array/02 - Medium/17 - Leaders in Array.md",
-    "Array/02 - Medium/16 - Next Permutations.md",
-    "Array/02 - Medium/15 - Rearrange Array Elements by Sign.md",
-    "Array/02 - Medium/13 - Stock Buy and Sell - I.md",
-    "Array/02 - Medium/14 - Stock Buy and Sell - II.md",
-    "Array/02 - Medium/12 - Maximum Subarray.md",
-    "Array/02 - Medium/11 - Majority Elements.md",
-    "Array/02 - Medium/10 - Sort Colors.md",
-    "Array/02 - Medium/09 - Two Sum.md",
     "Graphs",
     "z-images/Pasted image 20250910194539.png",
     "z-images/Pasted image 20250902123612.png",

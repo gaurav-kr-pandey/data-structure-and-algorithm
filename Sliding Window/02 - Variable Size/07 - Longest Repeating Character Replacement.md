@@ -1,7 +1,7 @@
 https://leetcode.com/problems/longest-repeating-character-replacement/description/
 
-You are given a string `s` and an integer `k`. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most `k` times.
-
+You are given a string `s` and an integer `k`. You can choose any character of the string and change it to any other uppercase English character. 
+You can perform this operation ==at most k== times.
 Return _the length of the longest substring containing the same letter you can get after performing the above operations_.
 
 **Example 1:**
@@ -20,8 +20,8 @@ Return _the length of the longest substring containing the same letter you can 
 - We don’t need to track which character is majority — just **track the count of the max occurring character** in the current window.
 
 ```text
-longest substring containing same letter(l) = letter with max freq(max_freq) + k
-l = max_freq + k
+longest substring containing same letter(l) =>
+letter with max freq(max_freq) + k == max_freq + k
 ```
 
 ---
@@ -49,14 +49,19 @@ class Solution {
         
         int i = 0, j = 0, n = s.length(), maxFreq = 0, max = 0;
         int[] freq = new int[26];
+        
         while (j < n) {
+        
             freq[s.charAt(j) - 'A']++;
             maxFreq = Math.max(maxFreq, freq[s.charAt(j) - 'A']);
+            
             while (j - i + 1 > k + maxFreq) {
                 freq[s.charAt(i) - 'A']--;
                 i++;
             }
+            
             max = Math.max(max, j - i + 1);
+            
             j++;
         }
         return max;
