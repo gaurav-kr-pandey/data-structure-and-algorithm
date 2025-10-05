@@ -13,7 +13,7 @@
 
 Check all subarrays and count those whose sum equals `k`.
 
-### 💡 Code (O(n²)):
+### 💡 Code -  $O(n²)$
 
 ```java
 public int subarraySum(int[] nums, int k) {
@@ -30,9 +30,9 @@ public int subarraySum(int[] nums, int k) {
 
 ```
 
-### ⏱ Time: O(n²)
+### ⏱ Time: $O(n²)$
 
-### 🧠 Space: O(1)
+### 🧠 Space: $O(1)$
 
 ---
 
@@ -69,7 +69,7 @@ Total = 2
 
 ---
 
-## Java Code (O(n)):
+## Code - $O(n)$:
 
 ```java
 import java.util.HashMap;
@@ -95,9 +95,9 @@ public class SubarraySumEqualsK {
 
 ```
 
-### Time: O(n)
+### Time: $O(n)$
 
-### Space: O(n)
+### Space: $O(n)$
 
 ---
 

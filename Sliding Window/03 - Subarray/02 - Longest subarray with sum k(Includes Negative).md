@@ -11,7 +11,7 @@ If we consider above example to run a simple sliding window, we keep adding `cur
 
 `if currSum <= 15 (k)` $\to$ add current element `currSum += arr[i]`  
 `if currSum == 15 (k)` $\to$ calculate result
-`if currSum > 15 (k)` $\to$ subtract element out of window range `currSum -= arr[j++]` 
+`if currSum > 15 (k)`   $\to$ subtract element out of window range `currSum -= arr[j++]` 
 
 Let's run this algo on above input -
 
@@ -31,6 +31,7 @@ Here answer from Sliding window is `4` but it should have been `6` since sum of 
 ###### Why Sliding Window does not worked for array having negative elements?
 
 In sliding window we keep increasing the window and decreasing the window based on the variable and when `currSum > k` in that case we ~~==decrease the window==~~
+
 _**Decreasing the window if  `currSum > k` is the issue**_ : because we are assuming that going ahead this sum will always increase but there can be a **negative number** that can reduce our `currSum` value and later sum up to `currSum == k` i.e; 
 `(currSum > k) --> (currSum <= k) --> (currSum == k)` and we can have a bigger length array possibly. Hence, we are not checking for all the window that can have `currSum == k` and then finding max.
 
@@ -64,7 +65,7 @@ if (currSum == k) {
 }
 ```
 
-One more thing to notice is we are missing values that are not starting from `index = 0`, meaning values between `i >=0 && i < n`, for example
+One more thing to notice is we are missing values that are not starting from `index = 0`, meaning values between `i > 0 && i < n`, for example
 
 ```text
 sum of index (1, 2, 3, 4) ==> 15
@@ -84,16 +85,18 @@ hence, we just need to check at each element that if there exists a element in t
 
 Here is the complete solution that works well:
 
-**Code:**
+## Code:
 
 ```java
 class Solution {
 
     public int longestSubarray(int[] arr, int k) {
+    
         Map<Integer, Integer> map = new HashMap<>();
         int j = 0, n = arr.length, len = 0, sum = 0;
 
         while (j < n) {
+        
             sum += arr[j];
 
             if (sum == k) {
@@ -105,6 +108,7 @@ class Solution {
             }
 
             map.putIfAbsent(sum, j);
+            
             j++;
         }
 
