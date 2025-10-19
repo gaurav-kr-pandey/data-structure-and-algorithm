@@ -1,5 +1,7 @@
 https://leetcode.com/problems/spiral-matrix/description/
 
+## Intuition :
+
 ```text
 - rowBegin, colBegin --> colEnd
 	- rowBegin++;
@@ -13,6 +15,8 @@ https://leetcode.com/problems/spiral-matrix/description/
 - colBegin, rowEnd --> rowBegin
 	- colBegin++;
 ```
+
+## Code :
 
 ```java
 class Solution {

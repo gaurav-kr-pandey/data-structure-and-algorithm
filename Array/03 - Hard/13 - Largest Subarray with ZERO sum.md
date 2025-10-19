@@ -1,7 +1,6 @@
+[practice](https://www.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1)
 
 > **Problem**: Find the **length of the largest subarray** with **sum = 0** in an integer array `arr[]`.
-
-[practice](https://www.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1)
 
 **Examples:**
 **Input:** `arr[]` = `[15, -2, 2, -8, 1, 7, 10, 23]`
@@ -16,7 +15,7 @@
 This is exactly same same as [[02 - Longest subarray with sum k(Includes Negative)]] where `k = 0`.
 Ref: [[02 - Longest subarray with sum k(Includes Negative)]]
 
-**Code:**
+## Code :
 
 ```java
 class Solution {

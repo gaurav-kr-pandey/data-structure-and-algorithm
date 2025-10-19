@@ -1,6 +1,8 @@
 https://leetcode.com/problems/longest-consecutive-sequence/description/
 
 
+## Code :
+
 ```java
 class Solution {
     public int longestConsecutive(int[] nums) {

@@ -9,7 +9,7 @@ https://leetcode.com/problems/next-permutation/description/
 3. Swap`index1, index2`
 4. Reverse/Sort the array after `index1`
 
-**Code:**
+## Code :
 
 ```java
 class Solution {

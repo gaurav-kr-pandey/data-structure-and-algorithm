@@ -1,7 +1,6 @@
-
 [practice](https://leetcode.com/problems/max-consecutive-ones/description/)
 
-### Solution:
+## Code :
 
 ```java
 class Solution {

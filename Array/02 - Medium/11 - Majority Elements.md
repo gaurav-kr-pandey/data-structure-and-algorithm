@@ -1,5 +1,7 @@
 https://leetcode.com/problems/majority-element/description/
 
+## Code :
+
 ```java
 class Solution {
     public int majorityElement(int[] nums) {

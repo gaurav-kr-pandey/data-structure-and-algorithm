@@ -1,6 +1,5 @@
 https://leetcode.com/problems/majority-element/description/
-
-### Intuition:
+## Intuition:
 
 **Approach 1: (Brute Force)**
 Use two loops first $i \to n$ to keep track of each elements, second $j \to n$ that traverse whole array and count that element. Then we can keep updating maxCount element. This solution requires $O(n^2)$ Time Complexity.

@@ -1,9 +1,10 @@
 https://leetcode.com/problems/maximum-product-subarray/
 
-Given an integer array `nums`, find a subarray that has the largest product, and return _the product_.
-The test cases are generated so that the answer will fit in a **32-bit** integer.
+Given an integer array `nums`, find a subarray that has the largest product, and return the product.
 
-### Intuition:
+_The test cases are generated so that the answer will fit in a **32-bit** integer._
+
+## Intuition:
 
 **Approach 1:** 
 Use two loops:
@@ -14,10 +15,7 @@ _Time Complexity: O($n^3$)_
 
 **Approach 2:** Two pointers ($i = 0, j = n -1$)
 
-
-
-
-**Code:**
+## Code :
 
 
 ```java

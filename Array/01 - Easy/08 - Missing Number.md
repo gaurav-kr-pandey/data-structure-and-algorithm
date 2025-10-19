@@ -7,7 +7,7 @@ Given an array `nums` containing `n` distinct numbers in the range `[0, n]`
 **Output:** 2
 **Explanation:** `n = 3` since there are 3 numbers, so all numbers are in the range `[0,3]`. 2 is the missing number in the range since it does not appear in `nums`.
 
-### Intuition:
+## Intuition:
 
 The very brute force approach can be using `SET` and add all the array elements into the set, then we can check from 1 to n for absence of a number. But this approach requires extra space complexity of O($n$).
 
@@ -22,7 +22,7 @@ if $\sum i \to n$, assume $S_a$ = $sum(array)$ then,
 missing number ($x$) 
 $x = S_n - Sa$ 
 
-**Code:**
+## Code :
 
 ```java
 class Solution {

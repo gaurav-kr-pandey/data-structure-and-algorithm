@@ -11,7 +11,7 @@ In **Pascal's triangle**, each number is the sum of the two numbers directly ab
   ![[Pasted image 20250819103320.png]]
 - If index is not `0` or `n - 1` then, `matrix[i][j] == matrix[i - 1][j - 1] + matrix[i - 1][j]` ![[Pasted image 20250819104118.png]]
 
-**Code:**
+## Code :
 
 ```java
 class Solution {
